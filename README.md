@@ -1,2 +1,41 @@
-# cagravol
+# Cagravol
 Large volume files manager
+
+## 1.- Brief of the Project**
+
+The project is basically a manager for large volume files (from 2Gb up to 50gb).
+
+The main need that resolve this project is that an "Event Organizer" (fairs, conferences, trade shows, congress, expositions, etc) is able to manage the graphical art/design between the customer (expositors, exhibitors, sponsors, advertisement, marketing, etc) and the provider for all this graphical/art stuff, in an effective and efficient way.
+
+The Event Organizer create a project (the event), set how many lots/sets/spots/places/spaces want, and then can assign each space to a customer by specifing an email address. From this moment, customer can send all the graphic stuff using this platform (no matter how big files are), so his/her material will be provided successfully, and every part (Event Organizer, Customer and Grapical Arts Provider) have the same information about the work done.
+
+## 2.- Architecture.
+
+The project was build using AngularJS for the frontend part, ASP.NET WebAPI for the backend, MSSQL Server for the database, and is used IIS to serve the site.
+
+These are some features you will find in the project:
+   - Domain Data Driven design.
+   - Dependency Injection
+   - Entity Framework Code-First
+   - API REST
+   - I18n
+ 
+
+## 3.- Some other notes on the project.
+
+   - This project was done entirely, except unit testing, by myself in aprox 45 days of work.
+   - The work was planned for 35 days of work, and was increased 2 times due to change request and issue clarifications, so justified.
+   - Unit testing was done, but not by me. Due to that is missing in here.
+   - I have the permission from SGE Company (the company I made the project for) to use it in my personal portfolio for possible employers verification, as in this case.
+   - I don't have any other permission or any other property over this code.
+   - Currently, I don't have contact with SGE Company, so don't know if their customer is running the project, but can assure that was running for 2 years at least.
+   - Is code first, so if you change the database connection string in the project SGE.Cagravol.WebAPI -> Web.config between lines 12 and 13:
+     - It creates a database called CAGRAVOL-DEV in the local database aliased to (.) 
+     - It is using Windows Authentication
+   - For launch the migration, in the Package Manager Console:
+     - Select default Project: 1.5-WebAPI\SGE.Cagravol.WebAPI
+     - Type "Update-database -verbose -ProjectName SGE.Cagravol.Infrastructure.Data"
+   - "CAGRAVOL" is a spanish pun/abbreviation of "CArga de (archivos de) GRAndes VOLúmenes", that means something like "large volume files manager".
+
+
+
