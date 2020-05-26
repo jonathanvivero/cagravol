@@ -19,7 +19,11 @@ These are some features you will find in the project:
    - Entity Framework Code-First
    - API REST
    - I18n
- 
+
+Solution file is in the root: __SGE.Cagravol.sln__.
+Main project is __SGE.Cagravol.WebAPI__, under _1.5-WebAPI_ folder
+Under the folder __/app__ is the AngularJS part for the frontend. There is no need to build.
+The backend part is basically shared between controllers, services and repositories.
 
 ## 3.- Some other notes on the project.
 
