@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C59FADAF-14CC-46AD-A710-8F4E3DC0730A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGE.Cagravol.Domain.Repositories</RootNamespace>
+    <AssemblyName>SGE.Cagravol.Domain.Repositories</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\IBaseAbstractRepository.cs" />
+    <Compile Include="Base\IBaseNoAutoIdAbstractRepository.cs" />
+    <Compile Include="Base\IBaseNoAutoIdRepository.cs" />
+    <Compile Include="Base\IBaseTRepository.cs" />
+    <Compile Include="Base\IBaseRepository.cs" />
+    <Compile Include="Base\IBaseUserBasedAbstractRepository.cs" />
+    <Compile Include="Base\IBaseUserBasedRepository.cs" />
+    <Compile Include="Base\IFilteredRepository.cs" />
+    <Compile Include="Common\IMiscRepository.cs" />
+    <Compile Include="Common\IAppConfigurationRepository.cs" />
+    <Compile Include="Customers\ICustomerRepository.cs" />
+    <Compile Include="Customers\IBillDataTypeRepository.cs" />
+    <Compile Include="Files\IFileUploadRepository.cs" />
+    <Compile Include="Files\IFileTypeRepository.cs" />
+    <Compile Include="Files\IFileRepository.cs" />
+    <Compile Include="Workflows\IWFFileStateNoteRepository.cs" />
+    <Compile Include="Workflows\IWFFileStateRepository.cs" />
+    <Compile Include="Projects\IProjectRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workflows\IWFTransitionRepository.cs" />
+    <Compile Include="Workflows\IWFStateRepository.cs" />
+    <Compile Include="Workflows\IWorkflowRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\1.1-Presentation\SGE.Cagravol.Presentation.Resources\SGE.Cagravol.Presentation.Resources.csproj">
+      <Project>{74094e9e-cafb-4042-8060-db3d31e93b30}</Project>
+      <Name>SGE.Cagravol.Presentation.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1.2-Application\SGE.Cagravol.Application.Core.Enums\SGE.Cagravol.Application.Core.Enums.csproj">
+      <Project>{33339b6b-293d-4bd0-93ef-87f27a9a672a}</Project>
+      <Name>SGE.Cagravol.Application.Core.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1.2-Application\SGE.Cagravol.Application.ServiceModel\SGE.Cagravol.Application.ServiceModel.csproj">
+      <Project>{9bebcff8-402c-40a4-a533-6a505ca887c5}</Project>
+      <Name>SGE.Cagravol.Application.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGE.Cagravol.Domain.Entities.Common\SGE.Cagravol.Domain.Entities.Common.csproj">
+      <Project>{8cbcc765-09da-418d-8f68-281a9dcca2c2}</Project>
+      <Name>SGE.Cagravol.Domain.Entities.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGE.Cagravol.Domain.Entities\SGE.Cagravol.Domain.Entities.csproj">
+      <Project>{953d6b6f-c2ea-4c35-85cf-8755f4757b61}</Project>
+      <Name>SGE.Cagravol.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGE.Cagravol.Domain.JSON\SGE.Cagravol.Domain.JSON.csproj">
+      <Project>{aec5e36a-d148-40b1-a551-7bb8293e4ca1}</Project>
+      <Name>SGE.Cagravol.Domain.JSON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGE.Cagravol.Domain.POCO\SGE.Cagravol.Domain.POCO.csproj">
+      <Project>{611c6085-073f-43cb-89bb-a198730e1281}</Project>
+      <Name>SGE.Cagravol.Domain.POCO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="History\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Habilite la restauración del paquete NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

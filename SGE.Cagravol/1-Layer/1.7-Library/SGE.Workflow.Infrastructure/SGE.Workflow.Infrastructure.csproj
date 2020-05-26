@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD872E75-9FDB-4DE1-BA00-0D7BDB818E76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGE.Workflow.Infrastructure</RootNamespace>
+    <AssemblyName>SGE.Workflow.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IWFEntityState.cs" />
+    <Compile Include="IWFEntityTransition.cs" />
+    <Compile Include="IWFEntityProcess.cs" />
+    <Compile Include="IWFEntityRequirement.cs" />
+    <Compile Include="IWFWorkflowable.cs" />
+    <Compile Include="IWFWorkflowRelatedEntity.cs" />
+    <Compile Include="IWFGroup.cs" />
+    <Compile Include="IWFProcessParameter.cs" />
+    <Compile Include="IWFSecurityPresetGroup.cs" />
+    <Compile Include="IWFUser.cs" />
+    <Compile Include="IWFRole.cs" />
+    <Compile Include="IWFNotifyPresetGroup.cs" />
+    <Compile Include="IWFProcess.cs" />
+    <Compile Include="IWFRequirement.cs" />
+    <Compile Include="IWFState.cs" />
+    <Compile Include="IWFTransition.cs" />
+    <Compile Include="IWFWorkflow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WFEntityProcess.cs" />
+    <Compile Include="IWFEntityStateNote.cs" />
+    <Compile Include="WFEntityTransition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\1.1-Presentation\SGE.Cagravol.Presentation.Resources\SGE.Cagravol.Presentation.Resources.csproj">
+      <Project>{74094e9e-cafb-4042-8060-db3d31e93b30}</Project>
+      <Name>SGE.Cagravol.Presentation.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1.2-Application\SGE.Cagravol.Application.Core.Enums\SGE.Cagravol.Application.Core.Enums.csproj">
+      <Project>{33339b6b-293d-4bd0-93ef-87f27a9a672a}</Project>
+      <Name>SGE.Cagravol.Application.Core.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1.2-Application\SGE.Cagravol.Application.ServiceModel\SGE.Cagravol.Application.ServiceModel.csproj">
+      <Project>{9bebcff8-402c-40a4-a533-6a505ca887c5}</Project>
+      <Name>SGE.Cagravol.Application.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1.3-Domain\SGE.Cagravol.Domain.Entities.Common\SGE.Cagravol.Domain.Entities.Common.csproj">
+      <Project>{8cbcc765-09da-418d-8f68-281a9dcca2c2}</Project>
+      <Name>SGE.Cagravol.Domain.Entities.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

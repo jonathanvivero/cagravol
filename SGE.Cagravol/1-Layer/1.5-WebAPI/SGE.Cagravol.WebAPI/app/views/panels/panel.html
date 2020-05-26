@@ -1,0 +1,62 @@
+﻿<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>{{title}}</h2>
+        <div class="clearfix">&nbsp;</div>
+        <p class="lead">{{description}}</p>
+    </div>
+</div>
+<info-bar></info-bar>
+<div class="row" ng-show="panels.top.show()">
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.top.left.url" onload="item = panels.top.left"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.top.center.url" onload="item = panels.top.center"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.top.right.url" onload="item = panels.top.right"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+</div>
+
+<div class="row" ng-show="panels.middle.show()">
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.middle.left.url" onload="item = panels.middle.left"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.middle.center.url" onload="item = panels.middle.center"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.middle.right.url" onload="item = panels.middle.right"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+</div>
+
+<div class="row" ng-show="panels.bottom.show()">
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.bottom.left.url" onload="item = panels.bottom.left"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.bottom.center.url" onload="item = panels.bottom.center"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" ng-include="panels.bottom.right.url" onload="item = panels.bottom.right"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+    </div>
+        
+</div>

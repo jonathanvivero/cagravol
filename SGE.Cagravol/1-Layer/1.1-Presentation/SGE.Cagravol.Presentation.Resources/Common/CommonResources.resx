@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accept" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>Añadido</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>Administrador</value>
+  </data>
+  <data name="AndroidConfigurationSection" xml:space="preserve">
+    <value>Configuración Android</value>
+  </data>
+  <data name="AndroidPushNotificationsApiKeyDescription" xml:space="preserve">
+    <value>Clave Api para Notificaciones Push en Android</value>
+  </data>
+  <data name="AndroidTitle" xml:space="preserve">
+    <value>Android</value>
+  </data>
+  <data name="AppColorSchema" xml:space="preserve">
+    <value>Esquema de Colores de la App</value>
+  </data>
+  <data name="AvailableImagesTitle" xml:space="preserve">
+    <value>Imagenes disponibles</value>
+  </data>
+  <data name="AvailableVideosTitle" xml:space="preserve">
+    <value>Videos disponibles</value>
+  </data>
+  <data name="BorderSize" xml:space="preserve">
+    <value>Grosor Borde</value>
+  </data>
+  <data name="BottomToolbar" xml:space="preserve">
+    <value>Barra Opciones Inferior</value>
+  </data>
+  <data name="BottomToolbarBackgroundColor" xml:space="preserve">
+    <value>Color Fondo Barra</value>
+  </data>
+  <data name="BottomToolbarForegroundColor" xml:space="preserve">
+    <value>Color Texto/Iconos Opciones</value>
+  </data>
+  <data name="BottomToolbarNote" xml:space="preserve">
+    <value>En algunas secciones, los elementos de dicha sección tienen varias posibilidades, como por ejemplo, indicar 'Me Gusta', contactar con usted telefónicamente, etc. Este menú consta de un fondo, y las opciones están formadas por botones con texto e icono. Aquí puede establecer el color de fondo de dicha barra de opciones (que siempre aparecerá en la zona inferior), y del texto e iconos de los botones de opción</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Checked" xml:space="preserve">
+    <value>¡Comprobado!</value>
+  </data>
+  <data name="CIF" xml:space="preserve">
+    <value>C.I.F.</value>
+  </data>
+  <data name="CleanFilter" xml:space="preserve">
+    <value>Limpiar filtro</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Cerrado</value>
+  </data>
+  <data name="ColorBackground" xml:space="preserve">
+    <value>Color fondo</value>
+  </data>
+  <data name="ColorBorders" xml:space="preserve">
+    <value>Color bordes</value>
+  </data>
+  <data name="ColorContentBackground" xml:space="preserve">
+    <value>Color fondo de contenido</value>
+  </data>
+  <data name="ColorLinks" xml:space="preserve">
+    <value>Color enlaces</value>
+  </data>
+  <data name="ColorMainText" xml:space="preserve">
+    <value>Color texto principal</value>
+  </data>
+  <data name="ColorMinorText" xml:space="preserve">
+    <value>Color texto secundario</value>
+  </data>
+  <data name="ColorTitle" xml:space="preserve">
+    <value>Color títulos</value>
+  </data>
+  <data name="ColorTitleBackground" xml:space="preserve">
+    <value>Color fondo Barra de Título</value>
+  </data>
+  <data name="CounterPhrase" xml:space="preserve">
+    <value>(Mostrando {0} a {1} de {2} registros)</value>
+  </data>
+  <data name="CouponTermsAndConditionDefaultTitle" xml:space="preserve">
+    <value>Terminos y Condiciones uso Cupón - Texto por defecto</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="CustomerDataPassKeyDescription" xml:space="preserve">
+    <value>Clave de Paso necesaria para obtener Datos del Perfil del cliente a través de servicio web</value>
+  </data>
+  <data name="CUSTOMER_APP_RELEASE_NUMBER" xml:space="preserve">
+    <value>Numero de Build de la app para la versión presente</value>
+  </data>
+  <data name="DateTimeBinder_DateTimeDayMonthYearHourMinuteFormat" xml:space="preserve">
+    <value>MM/yyyy</value>
+  </data>
+  <data name="DateTimeBinder_DateTimeDayMonthYearHourMinuteSecondsFormat" xml:space="preserve">
+    <value>dd/MM/yyyy HH:mm</value>
+  </data>
+  <data name="DateTimeBinder_DateTimeFormat" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="DateTimeBinder_DateTimeMonthYearFormat" xml:space="preserve">
+    <value>dd/MM/yyyy HH:mm:ss</value>
+  </data>
+  <data name="DateTimePickerCloseButton" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="DateTimePickerCurrentButton" xml:space="preserve">
+    <value>Hoy/Ahora</value>
+  </data>
+  <data name="DateTimePickerDayNamesShort" xml:space="preserve">
+    <value>["Lu","Ma","Mi","Ju","Vi","Sa","Do","Lu"]</value>
+  </data>
+  <data name="DateTimePickerHourText" xml:space="preserve">
+    <value>Hora (0-23)</value>
+  </data>
+  <data name="DateTimePickerMinuteText" xml:space="preserve">
+    <value>Minutos (0-59)</value>
+  </data>
+  <data name="DateTimePickerMonthNamesShort" xml:space="preserve">
+    <value>[ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ]</value>
+  </data>
+  <data name="DateTimePickerTimeFormat" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="DateTimePickerTimeText" xml:space="preserve">
+    <value>Horario</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Día</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Días</value>
+  </data>
+  <data name="DEFAULT_OFFER_ACTIVE_PERIOD" xml:space="preserve">
+    <value>Días (por defecto) que la oferta permanece activa desde el día en que se crea.</value>
+  </data>
+  <data name="DEFAULT_OFFER_SHOW_BUTTON_CONTACT" xml:space="preserve">
+    <value>Por defecto, en ofertas, mostrar botón 'Contactar'</value>
+  </data>
+  <data name="DEFAULT_OFFER_SHOW_BUTTON_LIKE" xml:space="preserve">
+    <value>Por defecto, en ofertas, mostrar botón 'Me Gusta'</value>
+  </data>
+  <data name="DEFAULT_OFFER_SHOW_BUTTON_RESERVATION" xml:space="preserve">
+    <value>Por defecto, en ofertas, mostrar botón 'Reservar'</value>
+  </data>
+  <data name="DEFAULT_OFFER_SHOW_BUTTON_SHARE" xml:space="preserve">
+    <value>Por defecto, en ofertas, mostrar botón 'Compartir'</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Eliminado</value>
+  </data>
+  <data name="DeletedError" xml:space="preserve">
+    <value>Error al Eliminar</value>
+  </data>
+  <data name="DeleteResultSuccessful" xml:space="preserve">
+    <value>El registro ha sido eliminado con éxito.</value>
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value>Eliminar {0}</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="DeselectAll" xml:space="preserve">
+    <value>Deseleccionar Todos</value>
+  </data>
+  <data name="Desktop" xml:space="preserve">
+    <value>Escritorio</value>
+  </data>
+  <data name="Devices" xml:space="preserve">
+    <value>Dispositivos</value>
+  </data>
+  <data name="DisplayOrderTitle" xml:space="preserve">
+    <value>Orden</value>
+  </data>
+  <data name="DoFilter" xml:space="preserve">
+    <value>Filtrar</value>
+  </data>
+  <data name="EditError" xml:space="preserve">
+    <value>Error al Modificar</value>
+  </data>
+  <data name="EditResultSuccess" xml:space="preserve">
+    <value>El registro ha sido modificado con éxito.</value>
+  </data>
+  <data name="ElementSavedNotPushNotificationDoneSuccessfully" xml:space="preserve">
+    <value>Se ha guadrado con éxito. No se han enviado notificaciones a los dispositivos.</value>
+  </data>
+  <data name="EmptyImageName" xml:space="preserve">
+    <value>(Sin Imagen)</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorOccured" xml:space="preserve">
+    <value>Ha ocurrido un error</value>
+  </data>
+  <data name="FinalUser" xml:space="preserve">
+    <value>Usuario Registrado</value>
+  </data>
+  <data name="FinalUserEmail" xml:space="preserve">
+    <value>Email Usuario Registrado</value>
+  </data>
+  <data name="FinalUserName" xml:space="preserve">
+    <value>Nombre Usuario Registrado</value>
+  </data>
+  <data name="FinalUserPhoneNumber" xml:space="preserve">
+    <value>Teléfono Usuario Registrado</value>
+  </data>
+  <data name="Franchise" xml:space="preserve">
+    <value>Franquicia</value>
+  </data>
+  <data name="FutureFinalUserCustomer" xml:space="preserve">
+    <value>Usuarios Futuribles</value>
+  </data>
+  <data name="HasNotBeenSelected" xml:space="preserve">
+    <value>No ha sido seleccionado</value>
+  </data>
+  <data name="HasUserInfo" xml:space="preserve">
+    <value>¿Es Usuario Registrado?</value>
+  </data>
+  <data name="HeaderBar" xml:space="preserve">
+    <value>Barra Título Superior</value>
+  </data>
+  <data name="HeaderBarBackgroundColor" xml:space="preserve">
+    <value>Color Fondo Barra</value>
+  </data>
+  <data name="HeaderBarForegroundColor" xml:space="preserve">
+    <value>Color Icono Menu</value>
+  </data>
+  <data name="HeaderBarNote" xml:space="preserve">
+    <value>La cabecera se compone del Logo de Cabecera y el icono que despliega el menú de la App. El Logo de cabecera lo puede establecer en el apartado Administración/Imagen Corporativa (Si tiene los permisos adecuados. Si no los tiene, pida a su Manager que lo realice). Tambien puede indicar el color de Fondo de dicha barra, y el color del Icono de despliegue de menú.</value>
+  </data>
+  <data name="HelloUser" xml:space="preserve">
+    <value>¡Hola {0}!</value>
+    <comment>Hello {0}!</comment>
+  </data>
+  <data name="HtmlContent" xml:space="preserve">
+    <value>Contenido</value>
+  </data>
+  <data name="ImageGallery" xml:space="preserve">
+    <value>Galería de Imágenes</value>
+  </data>
+  <data name="IOSConfigurationSection" xml:space="preserve">
+    <value>Configuración iOS</value>
+  </data>
+  <data name="IosPushNotificationsApiKeyDescription" xml:space="preserve">
+    <value>Clave Api para Notificaciones Push en iOS</value>
+  </data>
+  <data name="IOSTitle" xml:space="preserve">
+    <value>iOS</value>
+  </data>
+  <data name="IOS_VALIDATION_PENDING" xml:space="preserve">
+    <value>La versión iOS de la App aun no está validada para la App Store</value>
+  </data>
+  <data name="IOS_VALIDATION_PENDING_FROM_VERSION" xml:space="preserve">
+    <value>A partir de qué versión la App iOS está pendiente de validación por la App Store</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>Está Activo</value>
+  </data>
+  <data name="IsInactive" xml:space="preserve">
+    <value>No Está Activo</value>
+  </data>
+  <data name="LastAccess" xml:space="preserve">
+    <value>Último Acceso</value>
+  </data>
+  <data name="LegalId" xml:space="preserve">
+    <value>Nº/Código Identificación Fiscal</value>
+  </data>
+  <data name="LegalIdType" xml:space="preserve">
+    <value>Tipo de Nº/Código Identificación Fiscal</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Listado</value>
+  </data>
+  <data name="ListOf" xml:space="preserve">
+    <value>Listado de {0}</value>
+  </data>
+  <data name="ListViewModelAjaxListMethodName" xml:space="preserve">
+    <value>GetList</value>
+  </data>
+  <data name="ListViewModelListCssId" xml:space="preserve">
+    <value>table-list</value>
+  </data>
+  <data name="LoggedBusinessNameFormula" xml:space="preserve">
+    <value>D.C.: &lt;strong&gt;{0}&lt;/strong&gt;</value>
+  </data>
+  <data name="LoggedCustomerNameFormula" xml:space="preserve">
+    <value>Cuenta: &lt;strong&gt;{0}&lt;/strong&gt;</value>
+  </data>
+  <data name="LoggedFranchiseNameFormula" xml:space="preserve">
+    <value>Fr/Pr: &lt;strong&gt;{0}&lt;/strong&gt;</value>
+  </data>
+  <data name="LoggedUserNameFormula" xml:space="preserve">
+    <value>Usuario: &lt;strong&gt;{0}&lt;/strong&gt;</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Entrar</value>
+    <comment>Log In</comment>
+  </data>
+  <data name="LogOff" xml:space="preserve">
+    <value>Salir</value>
+    <comment>Log Off</comment>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menú</value>
+  </data>
+  <data name="MenuBackgroundColor" xml:space="preserve">
+    <value>Color Fondo</value>
+  </data>
+  <data name="MenuForegroundColor" xml:space="preserve">
+    <value>Color Texto/Iconos Menú</value>
+  </data>
+  <data name="MenuNote" xml:space="preserve">
+    <value>Al desplegar el Menú lateral, ya sea de izquierda o de derecha, muestra un panel con la lista de opciones que componen el menú. Aquí puede elegir el color de fondo de dicho panel y el color de los iconos y el texto de las opciones.</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>Meses</value>
+  </data>
+  <data name="MyLogoCompany" xml:space="preserve">
+    <value>Logo My Company</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="NameFilterId" xml:space="preserve">
+    <value>NameFilter</value>
+  </data>
+  <data name="NameFilterName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NIE" xml:space="preserve">
+    <value>N.I.E.</value>
+  </data>
+  <data name="NIF" xml:space="preserve">
+    <value>N.I.F.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoBusinessSelected" xml:space="preserve">
+    <value>[D.C No Especificado]</value>
+  </data>
+  <data name="NoCustomerSelected" xml:space="preserve">
+    <value>[Sin Cliente]</value>
+  </data>
+  <data name="NoFranchiseSelected" xml:space="preserve">
+    <value>[Fr/Pr No Especificado]</value>
+  </data>
+  <data name="NoGroupSelected" xml:space="preserve">
+    <value>Nigún Grupo</value>
+  </data>
+  <data name="NoImage" xml:space="preserve">
+    <value>Sin Imagen</value>
+  </data>
+  <data name="NoImageOrVideo" xml:space="preserve">
+    <value>(Sin imagen/video)</value>
+  </data>
+  <data name="NothingSelected" xml:space="preserve">
+    <value>No ha sido seleccionado ninguno</value>
+  </data>
+  <data name="NotImplementedYet" xml:space="preserve">
+    <value>Aún No Implementado</value>
+  </data>
+  <data name="NotPermissions" xml:space="preserve">
+    <value>No posee los suficientes permisos</value>
+  </data>
+  <data name="NotPermissionsForThisAction" xml:space="preserve">
+    <value>No posee los suficientes permisos para realizar esta acción</value>
+  </data>
+  <data name="NotSelected" xml:space="preserve">
+    <value>Seleccionar...</value>
+  </data>
+  <data name="NotSelectedAll" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="NotSpecified" xml:space="preserve">
+    <value>(No Especifica)</value>
+  </data>
+  <data name="NoVideo" xml:space="preserve">
+    <value>(Sin Video)</value>
+  </data>
+  <data name="OffersDefaultOptionsConfigurationSection" xml:space="preserve">
+    <value>Configuración Opciones Por defecto para Ofertas</value>
+  </data>
+  <data name="OfficeContactIconBackgroundColor" xml:space="preserve">
+    <value>Color Fondo Icono Llamada (Telefono)</value>
+  </data>
+  <data name="OfficeContactIconColor" xml:space="preserve">
+    <value>Color Icono Llamada (Teléfono)</value>
+  </data>
+  <data name="OfficeDetail" xml:space="preserve">
+    <value>Detalle 'Donde Estamos'</value>
+  </data>
+  <data name="OfficeDetailHeadBackgroundColor" xml:space="preserve">
+    <value>Color Fondo Imagen Superior</value>
+  </data>
+  <data name="OfficeDetailHeadBackgroundImageOpacity" xml:space="preserve">
+    <value>Opacidad Imagen Superior </value>
+  </data>
+  <data name="OfficeDetailHeadBackgroundNote" xml:space="preserve">
+    <value>En el detalle del contacto, puede mostrarse una imagen representativa de la oficina, delegación, tienda, etc. La opacidad de la imagen, es inversa a la transparencia de la misma, con lo que cuando da un 60% de opacidad, está indicando que la imagen será 40% transparente, por lo que dejará intuir el color de fondo seleccionado.</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Opacity" xml:space="preserve">
+    <value>Opacidad</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Abierto</value>
+  </data>
+  <data name="OrderDown" xml:space="preserve">
+    <value>Bajar Orden</value>
+  </data>
+  <data name="OrderUp" xml:space="preserve">
+    <value>Subir Orden</value>
+  </data>
+  <data name="PaginationButtonBackSeveralPages" xml:space="preserve">
+    <value>Retroceder hasta la página {0}</value>
+  </data>
+  <data name="PaginationButtonGoAheadSeveralPages" xml:space="preserve">
+    <value>Avanzar hasta la página {0}</value>
+  </data>
+  <data name="PASSPORT" xml:space="preserve">
+    <value>Nº Pasaporte</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Nº Teléfono</value>
+  </data>
+  <data name="PositionAtTheEnd" xml:space="preserve">
+    <value>Al Final</value>
+  </data>
+  <data name="PositionAtTheInit" xml:space="preserve">
+    <value>Al Principio</value>
+  </data>
+  <data name="PrivacyPolicyLegalNoteDefaultTitle" xml:space="preserve">
+    <value>Política de Privacidad - Texto por defecto</value>
+  </data>
+  <data name="PrivacyPolicyTitle" xml:space="preserve">
+    <value>Política de Privacidad</value>
+  </data>
+  <data name="PushNotificationSentSuccessfully" xml:space="preserve">
+    <value>Las Notificaciones Push han sido enviadas con éxito.</value>
+  </data>
+  <data name="QuestionSureToContinue" xml:space="preserve">
+    <value>¿Desea continuar?</value>
+  </data>
+  <data name="RegistryId" xml:space="preserve">
+    <value>Reg. ID</value>
+  </data>
+  <data name="Resource" xml:space="preserve">
+    <value>Imagen/Video</value>
+  </data>
+  <data name="ResultCancelled" xml:space="preserve">
+    <value>El proceso ha sido cancelado antes de terminar</value>
+  </data>
+  <data name="ResultSuccess" xml:space="preserve">
+    <value>El proceso ha terminado con éxito</value>
+  </data>
+  <data name="SatelliteTitle" xml:space="preserve">
+    <value>Satellite</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Seleccionar Todos</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Seleccionado</value>
+  </data>
+  <data name="SelectInvert" xml:space="preserve">
+    <value>Invertir Selección</value>
+  </data>
+  <data name="ShowTitle" xml:space="preserve">
+    <value>Mostrar Título</value>
+  </data>
+  <data name="SilverStones" xml:space="preserve">
+    <value>Rocas Plateadas</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Omitir</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Apellidos</value>
+  </data>
+  <data name="TAXCODE" xml:space="preserve">
+    <value>TAX Code (Internacional)</value>
+  </data>
+  <data name="TAXID" xml:space="preserve">
+    <value>TAX ID (Internacional)</value>
+  </data>
+  <data name="TheEarth" xml:space="preserve">
+    <value>La Tierra</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="TitleSeparatorLineSize" xml:space="preserve">
+    <value>Grosor linea separador título</value>
+  </data>
+  <data name="ToAdd" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="ToAddNew" xml:space="preserve">
+    <value>Añadir nuevo</value>
+  </data>
+  <data name="ToCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ToChange" xml:space="preserve">
+    <value>Cambiar</value>
+  </data>
+  <data name="ToChangePassword" xml:space="preserve">
+    <value>Cambiar Contraseña</value>
+  </data>
+  <data name="ToClose" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="ToCreate" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="ToCreateAndNewFemale_Format" xml:space="preserve">
+    <value>Crear y Nueva {0}</value>
+  </data>
+  <data name="ToCreateAndNewMale_Format" xml:space="preserve">
+    <value>Crear y Nuevo {0}</value>
+  </data>
+  <data name="ToDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="ToDisable" xml:space="preserve">
+    <value>Desactivar</value>
+  </data>
+  <data name="ToEdit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="ToEnable" xml:space="preserve">
+    <value>Activar</value>
+  </data>
+  <data name="ToFile" xml:space="preserve">
+    <value>Archivar</value>
+  </data>
+  <data name="ToFollowLink" xml:space="preserve">
+    <value>Ir a Enlace</value>
+  </data>
+  <data name="ToGoBackHome" xml:space="preserve">
+    <value>Ir a Inicio</value>
+  </data>
+  <data name="ToGoBackToList" xml:space="preserve">
+    <value>Volver al Listado</value>
+  </data>
+  <data name="ToGoMainSectionPageOf_Format" xml:space="preserve">
+    <value>Volver a {0}</value>
+  </data>
+  <data name="ToManageCustomerSections" xml:space="preserve">
+    <value>Adminnistrar Secciones</value>
+  </data>
+  <data name="ToManageMySections" xml:space="preserve">
+    <value>Mis Secciones</value>
+  </data>
+  <data name="ToNotify" xml:space="preserve">
+    <value>Enviar Notificaciones Push</value>
+  </data>
+  <data name="ToNotifySection" xml:space="preserve">
+    <value>Notificar nuevo contenido en Sección</value>
+  </data>
+  <data name="ToOpen" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="ToResetToDefault" xml:space="preserve">
+    <value>Resetear (Establecer Por Defecto)</value>
+  </data>
+  <data name="ToResolve" xml:space="preserve">
+    <value>Resolver</value>
+  </data>
+  <data name="ToSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="ToSaveWithoutSendingPush" xml:space="preserve">
+    <value>Guardar sin enviar Notificaciones</value>
+  </data>
+  <data name="ToSelect" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="ToSelectImage" xml:space="preserve">
+    <value>Seleccionar Imagen</value>
+  </data>
+  <data name="ToSelectVideo" xml:space="preserve">
+    <value>Seleccionar Video</value>
+  </data>
+  <data name="ToSend" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="ToSetCoupons" xml:space="preserve">
+    <value>Editar Cupones</value>
+  </data>
+  <data name="ToUnfile" xml:space="preserve">
+    <value>Desarchivar</value>
+  </data>
+  <data name="ToViewDetails" xml:space="preserve">
+    <value>Ver Detalles</value>
+  </data>
+  <data name="TypeHereForSearching" xml:space="preserve">
+    <value>Escribe aquí para buscar...</value>
+  </data>
+  <data name="UnableToFindCity" xml:space="preserve">
+    <value>No se encuentra nungún municipio o localidad que corresponda con el nombre que ha indicado</value>
+  </data>
+  <data name="UserRoles" xml:space="preserve">
+    <value>Roles de Usuario</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>VAT Number (Unión Europea)</value>
+  </data>
+  <data name="VideoGallery" xml:space="preserve">
+    <value>Galería de Videos</value>
+  </data>
+  <data name="VideoLinkTitle" xml:space="preserve">
+    <value>Enlace Video #{0}</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>¡Antención!</value>
+  </data>
+  <data name="WebFont" xml:space="preserve">
+    <value>Tipo de letra</value>
+  </data>
+  <data name="WebFontSize" xml:space="preserve">
+    <value>Tamaño</value>
+  </data>
+  <data name="WebFontStyle" xml:space="preserve">
+    <value>Estilo</value>
+  </data>
+  <data name="Wellcome" xml:space="preserve">
+    <value>¡Bienvenido!</value>
+  </data>
+  <data name="XatelliteJumboTitle" xml:space="preserve">
+    <value>Xatellite - Panel de Control</value>
+  </data>
+  <data name="Years" xml:space="preserve">
+    <value>Años</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="YouMustSelectAtLeatOne" xml:space="preserve">
+    <value>Debe seleccionar al menos uno.</value>
+  </data>
+  <data name="NotImplemented" xml:space="preserve">
+    <value>NO IMPLEMENTADO</value>
+  </data>
+</root>

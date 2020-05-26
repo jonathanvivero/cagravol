@@ -1,0 +1,83 @@
+﻿<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>{{title}}</h2>
+        <div class="clearfix">&nbsp;</div>
+        <p class="lead">{{description}}</p>
+    </div>
+</div>
+<info-bar></info-bar>
+<div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.name">{{resx.field.name}}</label>            
+            <label class="form-control">{{item.name}}</label>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.fileTypeId">{{resx.field.fileType}}</label>            
+            <label class="form-control">{{selectedFileType.name}}</label>
+        </div>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.name">{{resx.field.fileName}}</label>            
+            <label class="form-control">{{item.fileName}}</label>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+        <div class="form-group">
+            <label for="item.fileTypeId">{{resx.field.firstDeliveryDate}}</label>
+            <label class="form-control">{{item.firstDeliveryDate | date : resx.common.dateTimeFormat}}</label>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+        <div class="form-group">
+            <label for="item.fileTypeId">{{resx.field.version}}</label>
+            <label class="form-control">{{item.version}}</label>
+        </div>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <div class="well">
+            <div class=" row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label for="item.url">{{resx.field.file}}</label>
+                        <input type="file" id="item.url" />
+                    </div>
+                </div>
+            </div>
+
+            <div class=" row" ng-show="file.size > 0">
+                <div style="margin-top: 20px;border-bottom-color: antiquewhite;border-bottom-style: double;">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <button class="btn btn-danger btn-xs" ng-click="removeSelectedFiles()" title="{{resx.removeSelectedFile}}">
+                                <i class="fa fa-remove"></i>
+                            </button>
+                            &nbsp;&nbsp;<span>{{file.name}}</span>&nbsp;&nbsp;<span>({{file.size | bytes}})</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">{{remainingTime}}&nbsp;&nbsp;<i class="fa fa-cog fa-spin fa-fw" ng-show="miniSpinnerIsVisible"></i></div>
+                    <progress style="width:100%;" value="{{getFileProgress()}}" max="{{file.size}}"></progress>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr />
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <a class="btn btn-default" ng-href="{{backurl}}"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;{{resx.backToList}}</a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <button class="btn btn-default pull-right" ng-disabled="!preValidate()" ng-click="doSendFile()"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;{{resx.doResendFile}}&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></button>
+    </div>
+</div>
+

@@ -1,0 +1,80 @@
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>{{title}}</h2>
+        <div class="clearfix">&nbsp;</div>
+        <p class="lead">{{description}}</p>
+    </div>
+</div>
+<info-bar></info-bar>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-show="customer.files.length == 0">&nbsp;</div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-show="customer.files.length > 0">
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputFilter">{{resx.filter}}</label>
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="filterText" placeholder="{{resx.filter}}">
+                <div class="input-group-addon" placeholder=><i class="fa fa-filter"></i></div>
+                <div ng-show="filterText !== ''" class="input-group-addon" placeholder=><i class="fa fa-remove" ng-click="clearFilterText()"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8">
+        &nbsp;
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">        
+        <a ng-show="selectedId > 0" target="_blank" class="btn btn-primary pull-right" href="{{selectedUrl}}" uib-tooltip="{{resx.common.download}}">
+            <i class="fa fa-download"></i>
+        </a>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
+        <button ng-show="selectedId > 0" class="btn btn-primary pull-right" ng-click="goHistory()" uib-tooltip="{{resx.myspace.history}}">
+            <i class="fa fa-list-ol"></i>
+        </button>
+    </div>
+    <hr />
+</div>
+
+<div class="row" ng-show="customer.files.length > 0">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <table class="table table-condensed table-hover">
+            <thead>
+                <tr>
+                    <th>{{resx.field.name}}</th>
+                    <th>{{resx.field.size}}</th>
+                    <th>{{resx.field.wfstate}}</th>
+                    <th>{{resx.field.version}}</th>
+                    <th>{{resx.field.fileType}}</th>
+                    <th>{{resx.field.firstDeliveryDate}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in customer.files | filter:filterText" ng-dblclick="go(item)" ng-click="select(item, $index)" context-menu="ctxMenu" ng-class="{warning: (selectedId == item.id)}">
+                    <th><div ng-click="download()"> {{item.name}}</div></th>
+                    <th>{{item.size | bytes}}</th>
+                    <th>{{item.wfCurrentState.name}}</th>
+                    <th>{{item.version}}</th>
+                    <th>{{item.fileType.name}}</th>
+                    <th>{{item.firstDeliveryDate | date : resx.common.dateTimeFormat}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr />
+</div>
+
+
+<div class="row" ng-show="customer.files.length == 0">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-info alert-dismissible" role="alert">
+            <div class="text-center"><strong>{{resx.noItemsInList}}</strong></div>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <a href="#/project/activity/{{pid}}" class="btn btn-default btn-block"> <i class="fa fa-chevron-left"></i>&nbsp;&nbsp;{{resx.backToActivity}}</a>        
+    </div>
+</div>

@@ -1,0 +1,201 @@
+<div class="row">
+    <h2>{{title}}</h2>
+    <div class="clearfix"></div>
+    <p class="lead">{{description}}</p>
+</div>
+<info-bar></info-bar>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <!--<label for="item.fileTypeId">{{resx.spaceStatus}}</label>-->
+            <select ng-model="listFilter" class=" form-control" ng-options="spaceStatus.name for spaceStatus in spaceStatusList track by spaceStatus.id"></select>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" ng-class="{'btn-primary': gridType === 0}" ng-click="setListTypeTo(0)"><i class="fa fa-th  fa-2x"></i></button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" ng-class="{'btn-primary': gridType === 1}" ng-click="setListTypeTo(1)"><i class="fa fa-th-large fa-2x"></i></button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" ng-class="{'btn-primary': gridType === 2}" ng-click="setListTypeTo(2)"><i class="fa fa-navicon fa-2x"></i></button>
+            </div>
+        </div>
+        &nbsp;
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>{{resx.common.generalSpace}}</strong></h3>
+            </div>
+            <div class="panel-body">
+                {{generalSpace.files.length}}&nbsp;{{resx.common.filesSent}}
+
+            </div>
+            <div class="panel-footer">
+                <a class="btn btn-info btn-block" href="#/project/gspace/activity/{{id}}">
+                    <i class="fa fa-file-image-o"></i>&nbsp;&nbsp;
+                    Ver Archivos
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div ng-class="getGridClass()" ng-repeat="customer in item.customers | filterCustomerBy : customer.signUpCode : listFilter " context-menu="ctxMenu">
+
+
+        <div class="panel" ng-class="getColorClass($index,'panel')">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <span ng-show="resetIndex === $index">{{resx.common.reset}}&nbsp;</span>
+                    <span ng-show="eliminationIndex === $index">{{resx.common.delete}}&nbsp;</span>
+                    <span ng-show="reservationIndex === $index">{{resx.common.reserve}}&nbsp;</span>
+                    <span ng-show="assignmentIndex === $index">{{resx.common.assign}}&nbsp;</span>
+                    {{customer.signUpCode}}
+                    <i class="fa fa-info-circle pull-right" uib-tooltip="{{resx.rightClickForMoreOptionsInfo}}"></i>
+                </h3>
+            </div>
+            <div class="panel-body" ng-show="cuzType($index) === 2 && eliminationIndex !== $index">
+                {{customer.email}}
+                <div class="clearfix"></div>
+                {{customer.name}}&nbsp;
+                <div class="clearfix"></div>
+                {{customer.files.length}} {{resx.common.filesSent}}
+            </div>
+
+            <div class="panel-body" ng-show="cuzType($index) === 1 && assignmentIndex !== $index && reservationIndex !== $index && resetIndex !== $index">
+                {{customer.email}}
+                <div class="clearfix"></div>
+                <span style="font-style:italic;">{{resx.waitingForCustomerRegistration}}</span>
+                <div class="clearfix"></div>
+                &nbsp;
+            </div>
+            <div class="panel-body" ng-show="cuzType($index) === 0 && assignmentIndex !== $index && reservationIndex !== $index  && resetIndex !== $index">
+                &lt;&lt;{{resx.common.freeSpace}}&gt;&gt;
+                <div class="clearfix"></div>
+                &nbsp;
+                <div class="clearfix"></div>
+                &nbsp;
+            </div>
+
+            <div class="panel-body" ng-show="eliminationIndex === $index">
+                <strong>Si elimina este usuario, eliminar&aacute; todos sus archivos, su historia, y no tendr&aacute; acceso a la plataforma.</strong>
+                <h3>&iquest;Esta seguro que desea eliminar este usuario?</h3>
+            </div>
+
+            <div class="panel-body" ng-show="assignmentIndex === $index">
+                <div class="form-group">
+                    <label for="emailForSpace">Indique el Email y la contrase&ntilde;a para el usuario al que asigna el espacio.</label>
+                    <input type="text" class="form-control" ng-model="emailForAssignment[$index]" placeholder="Direcci&oacute;n de Correo-e">
+                </div>                
+                <div class="form-group">                    
+                    <input type="text" class="form-control" ng-model="passwordForAssignment[$index]" placeholder="Contrase&ntilde;a">
+                </div>                
+            </div>
+
+            <div class="panel-body" ng-show="reservationIndex === $index">
+                <div class="form-group">
+                    <label for="emailForSpace">Indique el Email de la persona para la que se reservar&aacute; el espacio.</label>
+                    <input type="text" class="form-control" ng-model="emailForReservation[$index]" placeholder="Direcci&oacute;n de Correo-e">
+                </div>
+
+            </div>
+
+            <div class="panel-body" ng-show="resetIndex === $index">
+                <h4>&iquest;Seguro que desea Liberar este espacio reservado a {{emailForReset[$index]}}?</h4>                
+            </div>
+
+            <div class="panel-footer">
+                <!-- Space is registered by user -->
+                <div class="btn-group btn-block" role="group" aria-label="" ng-show="cuzType($index) === 2 && eliminationIndex !== $index">
+                    <button type="button" class="btn btn-primary btn-block" ng-click="viewCustomerFiles($index)"><i class="fa fa-list-alt fa-lg"></i>&nbsp;&nbsp;{{resx.viewCustomerFiles}}</button>
+                    <button type="button" class="btn btn-danger btn-block" ng-click="removeCustomerSpace($index)"><i class="fa fa-trash fa-lg"></i>&nbsp;&nbsp;{{resx.removeCustomerSpace}}</button>
+                </div>
+
+                <div class="btn-group btn-block" role="group" aria-label="" ng-show="cuzType($index) === 2 && eliminationIndex === $index">
+                    <button type="button" class="btn btn-primary btn-block" ng-click="eliminationOk($index)"><i class="fa fa-check-circle-o fa-lg"></i>&nbsp;&nbsp;{{resx.common.ok}}</button>
+                    <button type="button" class="btn btn-danger btn-block" ng-click="eliminationCancel($index)"><i class="fa fa-times-circle-o fa-lg"></i>&nbsp;&nbsp;{{resx.common.cancel}}</button>
+                </div>
+
+                <!-- space is reserved, but user is not reserved -->
+                <div class="btn-group btn-block" role="group" aria-label="" ng-show="cuzType($index) === 1 && resetIndex !== $index && assignmentIndex !== $index">
+                    <button type="button" class="btn btn-primary btn-block" ng-click="assignCustomerSpace($index)"><i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;{{resx.assignSpaceToCustomer}}</button>
+                    <button type="button" class="btn btn-danger btn-block" ng-click="resetCustomerSpace($index)"><i class="fa fa-eraser fa-lg"></i>&nbsp;&nbsp;{{resx.resetCustomerSpace}}</button>
+                </div>
+
+                <!-- Space is free -->
+                <div class="btn-group btn-block" role="group" aria-label="" ng-show="cuzType($index) === 0 && assignmentIndex !== $index && reservationIndex !== $index && resetIndex !== $index">
+                    <button type="button" class="btn btn-primary btn-block" ng-click="assignCustomerSpace($index)"><i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;{{resx.assignSpaceToCustomer}} </button>
+                    <button type="button" class="btn btn-primary btn-block" ng-click="reserveCustomerSpace($index)"><i class="fa fa-bookmark fa-lg"></i> &nbsp;&nbsp;{{resx.reserveSpaceForCustomer}}</button>
+                </div>
+
+                <!--  On Assigning the space to a user-->
+                <div class="btn-group btn-block" role="group" aria-label="" ng-show="cuzType($index) !== 2 && assignmentIndex === $index  && reservationIndex !== $index && resetIndex !== $index">
+                    <button type="button" class="btn btn-primary btn-block" ng-click="assignmentOk($index)"><i class="fa fa-check-circle-o fa-lg"></i>&nbsp;&nbsp;{{resx.common.ok}}</button>
+                    <button type="button" class="btn btn-danger btn-block" ng-click="assignmentCancel($index)"><i class="fa fa-times-circle-o fa-lg"></i>&nbsp;&nbsp;{{resx.common.cancel}}</button>
+                </div>
+
+                <!--  Want to reserve the space-->
+                <div class="btn-group btn-block" role="group" aria-label="" ng-show="cuzType($index) === 0 && assignmentIndex !== $index  && reservationIndex === $index && resetIndex !== $index">
+                    <button type="button" class="btn btn-primary btn-block" ng-click="reservationOk($index)"><i class="fa fa-check-circle-o fa-lg"></i>&nbsp;&nbsp;{{resx.common.ok}}</button>
+                    <button type="button" class="btn btn-danger btn-block" ng-click="reservationCancel($index)"><i class="fa fa-times-circle-o fa-lg"></i>&nbsp;&nbsp;{{resx.common.cancel}}</button>
+                </div>
+
+                <!--  Want to reset a reserve the space-->
+                <div class="btn-group btn-block" role="group" aria-label="" ng-show="cuzType($index) === 1 && assignmentIndex !== $index  && reservationIndex !== $index && resetIndex === $index">
+                    <button type="button" class="btn btn-primary btn-block" ng-click="resetOk($index)"><i class="fa fa-check-circle-o fa-lg"></i>&nbsp;&nbsp;{{resx.common.ok}}</button>
+                    <button type="button" class="btn btn-danger btn-block" ng-click="resetCancel($index)"><i class="fa fa-times-circle-o fa-lg"></i>&nbsp;&nbsp;{{resx.common.cancel}}</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--<div class="panel panel-primary" ng-show="customer.spaceNumber > 0 && emailExists(customer.email)">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{customer.signUpCode}}</h3>
+            </div>
+            <div class="panel-body">
+                {{customer.email}}
+                <div class="clearfix"></div>
+                {{customer.name}}
+                <div class="clearfix"></div>
+                {{customer.files.length}} {{resx.common.filesSent}}
+            </div>
+            <div class="panel-footer">
+                <a class="btn btn-primary btn-block" href="#/project/customer/activity/{{id}}/{{customer.id}}">
+                    <i class="fa fa-list-alt"></i>&nbsp;&nbsp;
+                    Ver Archivos
+                </a>
+            </div>
+        </div>
+
+        <div class="panel panel-default" ng-show="customer.spaceNumber > 0 && !emailExists(customer.email)">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{customer.signUpCode}}</h3>
+            </div>
+            <div class="panel-body" ng-show="!emailExists(customer.email)">
+                &lt;&lt;{{resx.common.freeSpace}}&gt;&gt;
+                <div class="clearfix"></div>
+                &nbsp;
+                <div class="clearfix"></div>
+                &nbsp;
+            </div>
+            <div class="panel-footer">
+                <a class="btn btn-info btn-block" href="#/project/customer/assignment/{{id}}/{{customer.id}}">
+                    <i class="fa fa-user-plus"></i>&nbsp;&nbsp;
+                    Assignar
+                </a>
+            </div>
+        </div>-->
+    </div>
+</div>

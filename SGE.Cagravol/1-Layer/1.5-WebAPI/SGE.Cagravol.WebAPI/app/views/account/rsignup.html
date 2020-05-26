@@ -1,0 +1,39 @@
+﻿<info-bar></info-bar>
+<form class="form-login" role="form">
+    <h2 class="form-login-heading">{{resx.title}}</h2>
+    <p class="lead">{{resx.instructions_login_reservation}}</p>
+    <p>
+        <ul>
+            <li ng-bind-html="getInstructions(resx.instructions_a)"></li>
+            <li ng-bind-html="getInstructions(resx.instructions_b)"></li>
+            <li ng-bind-html="getInstructions(resx.instructions_c)"></li>
+            <li ng-bind-html="getInstructions(resx.instructions_d)"></li>
+        </ul>
+    </p>
+    <div class="clearfix">&nbsp;</div>
+
+    <div class="form-group">
+        <label for="">{{resx.field.signUpCode}}</label>
+        <label class="form-control">{{registration.projectCode}}</label>
+    </div>
+    <div class="form-group">
+        <label for="">{{resx.field.userName}}</label>
+        <label class="form-control">{{registration.userName}}</label>
+    </div>
+    <div class="form-group">
+        <label for="">{{resx.field.name}}</label>
+        <input type="text" class="form-control" data-ng-model="registration.name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="">{{resx.login.password}}</label>
+        <input type="password" class="form-control" placeholder="{{resx.login.password}}" data-ng-model="registration.password" required>
+        <input type="password" class="form-control" placeholder="{{resx.login.passwordConfirmation}}" data-ng-model="registration.confirmPassword" required>
+    </div>
+
+
+    <div class="clearfix">&nbsp;</div>
+    <button class="btn btn-lg btn-info btn-block" ng-disabled="!enabledButton" type="submit" data-ng-click="signUp()">{{resx.sendButton}}</button>
+    <div class="clearfix">&nbsp;</div>
+    
+</form>

@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChangePasswordOldPasswordRequired" xml:space="preserve">
+    <value>Para cambiar la contraseña es necesario que indique la contraseña actual.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Cerrar</value>
+    <comment>Close</comment>
+  </data>
+  <data name="CustomerAdminNotCreated" xml:space="preserve">
+    <value>No ha sido posible crear el usuario 'Administrador' para este cliente. El cliente no puede ser creado.</value>
+  </data>
+  <data name="CustomerNotFound" xml:space="preserve">
+    <value>No se encuentra el Cliente con el identificador indicado</value>
+  </data>
+  <data name="DeviceNotFound" xml:space="preserve">
+    <value>No se encuentra este dispositivo como Registrado!</value>
+  </data>
+  <data name="EditActionNotPossibleErrorExists" xml:space="preserve">
+    <value>No ha sido posible guardar los datos, dado que hay errores. Por favor, corrígalos para proceder a guardarlos correctamente</value>
+  </data>
+  <data name="EmailLoginAlreadyExists" xml:space="preserve">
+    <value>El email indicado para inicio de sesión ya está siendo usado. Debe indicar otra direccion de correo válida</value>
+  </data>
+  <data name="EmailsDontMatch" xml:space="preserve">
+    <value>Las direcciones de correo electrónico no coinciden</value>
+  </data>
+  <data name="EntityNullOrDoesNotExist" xml:space="preserve">
+    <value>La entidad no existe o es nula</value>
+  </data>
+  <data name="ErrorACityShouldBeSelected" xml:space="preserve">
+    <value>Debe seleccionar un Municipio/Localidad para continuar (o puede pulsar en 'Cerrar' para cancelar)</value>
+  </data>
+  <data name="ErrorAtSendingEmailMessage" xml:space="preserve">
+    <value>Error al enviar un mensaje por Correo Electrónico.</value>
+  </data>
+  <data name="ErrorGetContentRegisterAgainNeeded" xml:space="preserve">
+    <value>Lo sentimos, es necesario volver a registrar el dispositivo.</value>
+  </data>
+  <data name="ErrorOfferStateNotAbleToBeChanged" xml:space="preserve">
+    <value>No se ha logrado cambiar el estado de esta oferta.</value>
+  </data>
+  <data name="ErrorOnActionByCause" xml:space="preserve">
+    <value>Error al llevar a cabo la acción '{0}', debido al siguiente motivo: {1}</value>
+  </data>
+  <data name="ErrorOnElementCreation" xml:space="preserve">
+    <value>Error al intentar crear el registro de {0}. &lt;br/&gt;Ocurrió el siguiente error:&lt;ul&gt; &lt;li&gt;{1}&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="ErrorOnFetchingSectionForThisItem" xml:space="preserve">
+    <value>Ha ocurrido un error al consultar la Sección para este elemento. Puede que el identificador no sea correcto.</value>
+  </data>
+  <data name="ErrorOnGettingImageFile" xml:space="preserve">
+    <value>Error al extraer el archivo de imagen. Asegúrese que el archivo es un formato de imagen correcto. Mensaje de error: {0}</value>
+  </data>
+  <data name="ErrorOnUserCreation" xml:space="preserve">
+    <value>Ocurrió un error al crear el usuario</value>
+  </data>
+  <data name="ErrorOnUserCreation_UserAlreadyExist" xml:space="preserve">
+    <value>El Usuario ya existe en el sistema. No es posible usar el Email indicado.</value>
+  </data>
+  <data name="ErrorSendingVideos" xml:space="preserve">
+    <value>Para enviar todos los enlaces, compruebe lo siguiente: \n - Todos los enlaces deben ser correctos. \n - Todos los videos deben tener Nombre identificativo.</value>
+  </data>
+  <data name="FieldIsMandatory" xml:space="preserve">
+    <value>El campo '{0}' es obligatorio</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>No se encuentra el archivo</value>
+  </data>
+  <data name="FileWFStateIsNotInThisStateAnyMore" xml:space="preserve">
+    <value>El estado del archivo ha cambiado previamente. Por favor, actualice los datos antes de volver a interntarlo.</value>
+  </data>
+  <data name="FinalUserCustomerIsAlreadyRegisteredAndPasswordDoesNotMatch" xml:space="preserve">
+    <value>Ya existe un usuario registrado para esta app con esta misma dirección de email, aunque la contraseña provista no coincide.</value>
+  </data>
+  <data name="FinalUserCustomerLogInUserEmailNotFoundForThisApp" xml:space="preserve">
+    <value>No se encuentra ningún usuario existente con ese email para esta app. Por favor, si desea registrar un usuario para esta app con ese Email, use la opcion 'Registrar Nuevo Usuario'. Disculpe las molestias.</value>
+  </data>
+  <data name="FinalUserCustomerRegistrationDeviceNotFound" xml:space="preserve">
+    <value>No se encuentra registro para este dispositivo. Por favor, vuelva a instalar la applicación. Disculpe las molestias.</value>
+  </data>
+  <data name="FranchiseAdminNotCreated" xml:space="preserve">
+    <value>No ha sido posible crear el usuario 'Administrador' para esta Franquicia/Promotor. El cliente no puede ser creado.</value>
+  </data>
+  <data name="GetInitialContentNoSectionsAvailable" xml:space="preserve">
+    <value>¡No se encuentran secciones disponibles! Por favor, intentelo de nuevo pasados unos segundos. Gracias y disculpe las molestias.</value>
+  </data>
+  <data name="GetItemContentNotFound" xml:space="preserve">
+    <value>No se encuentra el contenido. Puede que este haya sido actualizado. ¡Disculpen la molestia!</value>
+  </data>
+  <data name="ImageGalleryAtLeastOneImageSelected" xml:space="preserve">
+    <value>Debe seleccionar al menos una imagen.</value>
+  </data>
+  <data name="ImageGalleryOnlyOneImageSelected" xml:space="preserve">
+    <value>Tan sólo puede seleccionar una imagen a la vez.</value>
+  </data>
+  <data name="ImageHasNoContent" xml:space="preserve">
+    <value>La imagen está vacia</value>
+  </data>
+  <data name="ItemDoesNotExist" xml:space="preserve">
+    <value>El elemento no existe</value>
+  </data>
+  <data name="ListHasZeroElements" xml:space="preserve">
+    <value>No existen elementos que mostrar.</value>
+  </data>
+  <data name="ModelStateErrors_Format" xml:space="preserve">
+    <value>&lt;p&gt;&lt;i class="fa fa-exclamation-circle"&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;No se pudo terminar la acción satisfactoriamente debido a los siguientes errores:&lt;ul&gt;{0}&lt;/ul&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="NewFinalUserCustomerIsPortalUserAndPasswordDoesNotMatch" xml:space="preserve">
+    <value>Este usuario ya está registrado en el portal de administración. Por razones de seguridad, la contraseña a utilizar debe coincidir con la utilizada en el portal. Todos los intentos de registro para este usuario, serán notificados a dicha dirección de correo como intentos fallidos.</value>
+  </data>
+  <data name="NewPasswordsDontMatch" xml:space="preserve">
+    <value>Las nuevas contraseñas no coinciden</value>
+  </data>
+  <data name="NoItemsToBeAddedFound" xml:space="preserve">
+    <value>No se econtraron elementos para añadir.</value>
+  </data>
+  <data name="NotImplemented" xml:space="preserve">
+    <value>Error: No Implementado Aún</value>
+  </data>
+  <data name="OnCreationErrorPleaseReview" xml:space="preserve">
+    <value>Error al crear este elemento. Por favor revise la siguiente información:</value>
+  </data>
+  <data name="OnDeleteError" xml:space="preserve">
+    <value>Ocurió el siguiente error al intentar eliminar el registro: &lt;br/&gt;&lt;ul&gt;&lt;li&gt;{0}&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="OnDeleteSuccess" xml:space="preserve">
+    <value>El registro se ha eliminado con éxito.</value>
+  </data>
+  <data name="OnlyImagesAllowed" xml:space="preserve">
+    <value>Solo se pueden subir imágenes (JPG, PNG o GIF)</value>
+  </data>
+  <data name="PasswordIsRequired" xml:space="preserve">
+    <value>Debe indicar una contraseña</value>
+  </data>
+  <data name="PasswordLengthLestThan_Format" xml:space="preserve">
+    <value>La longitud de la contraseña debe ser mínimo de {0} carácteres.</value>
+  </data>
+  <data name="PasswordNotCorrect" xml:space="preserve">
+    <value>La contraseña no es válida.</value>
+  </data>
+  <data name="PasswordsDontMatch" xml:space="preserve">
+    <value>Las contraseñas no coinciden</value>
+  </data>
+  <data name="PaswordAllowOnlyFollowingChars" xml:space="preserve">
+    <value>La contraseña solo admite letras (mayúsculas y minúsculas), números y los siguientes carácteres especiales: $ % @ . , - _ ! ¡ ¿ ? # / \ · ( )</value>
+  </data>
+  <data name="PleaseReloadPage" xml:space="preserve">
+    <value>Por favor, actualice la página.</value>
+  </data>
+  <data name="PostalCodeFormatError" xml:space="preserve">
+    <value>El formato del Codigo Postal no es correocto. Debe ser un número entre 5 y 10 dígitos.</value>
+  </data>
+  <data name="ResetPasswordByEmailNotValidParameters" xml:space="preserve">
+    <value>Los parametros para establecer una nueva contraseña para la cuenta de usuario no son válidos. Póngase en contacto con su administrador para reestablecer una nueva contraseña de acceso para esta cuenta.</value>
+  </data>
+  <data name="SectionDoesNotBelongToThisCustomer" xml:space="preserve">
+    <value>La sección indicada no existe.</value>
+  </data>
+  <data name="SectionForNotifyDoesNotExist" xml:space="preserve">
+    <value>No se puede encontrar la sección de la cual desea notificar.</value>
+  </data>
+  <data name="SessionHasExpired" xml:space="preserve">
+    <value>La sesión ha caducado.</value>
+  </data>
+  <data name="TemporaryFolderNotFoundForDeletion" xml:space="preserve">
+    <value>No se puede eliminar el directorio temporal para la subida de archivos, dado que no existe o no se encuentra.</value>
+  </data>
+  <data name="UnexpectedErrorOcured" xml:space="preserve">
+    <value>Ocurrió un error inesperado</value>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>Error de origen desconocido. Póngase en contacto con el administrador.</value>
+  </data>
+  <data name="UserCannotBeUpdated" xml:space="preserve">
+    <value>Los datos no pudieron ser actializados.</value>
+  </data>
+  <data name="UserCredentialsInvalid" xml:space="preserve">
+    <value>Las credenciales de usuario no permiten operar con la cuenta facilitada.</value>
+    <comment>User account is not active</comment>
+  </data>
+  <data name="UserEmailConfirmationNotValidParameters" xml:space="preserve">
+    <value>Los parametros para confirmar la cuenta de usuario no son válidos. Póngase en contacto con su administrador para solucionar la confirmación de esta cuenta.</value>
+  </data>
+  <data name="UserEmailConfirmationUserNotFound" xml:space="preserve">
+    <value>No se encontró el usuario para confirmar la cuenta. Puede que el usuario haya sido eliminado. Por favor, póngase en contacto con su administrador para solucionar la confirmación de esta cuenta.</value>
+  </data>
+  <data name="UserEmailNotConfirmed" xml:space="preserve">
+    <value>El usuario no ha confirmado aun a través del enlace enviado por email.&lt;br/&gt;Pulse &lt;a href='{0}'&gt;aquí&lt;/a&gt; para enviar de nuevo el email de confirmación.</value>
+  </data>
+  <data name="UserEmailNotFound" xml:space="preserve">
+    <value>No se encontrado un usuario con el Email indicado.</value>
+  </data>
+  <data name="UserHasNotAuthorizationToPerformThisAction" xml:space="preserve">
+    <value>El Usuario no tiene privilegios suficientes para realizar esta acción.</value>
+  </data>
+  <data name="UserNoActiveAccount" xml:space="preserve">
+    <value>La cuenta de este Ususario está desactivada.</value>
+    <comment>User account is not active</comment>
+  </data>
+  <data name="UserOrEmailNorValid" xml:space="preserve">
+    <value>El Email o la clave no son válidos.</value>
+    <comment>Invalid username or password</comment>
+  </data>
+  <data name="VideoGalleryAtLeastOneVideoSelected" xml:space="preserve">
+    <value>Debe seleccionar al menos un video.</value>
+  </data>
+  <data name="VideoGalleryOnlyOneVideoSelected" xml:space="preserve">
+    <value>Tan sólo puede seleccionar un video a la vez.</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>¡Atención!</value>
+    <comment>Warning!</comment>
+  </data>
+  <data name="WebApiRegisterDeviceCustomerNotFound" xml:space="preserve">
+    <value>¡No se encuentra el proveedor de contenidos para esta app! Por favor, intentelo de nuevo en unos segundos. Gracias y discupe las molestias.</value>
+  </data>
+  <data name="WFStateNotFound" xml:space="preserve">
+    <value>No se encuentra el Estado en el Workflow.</value>
+  </data>
+  <data name="WFTransitionNotFound" xml:space="preserve">
+    <value>No se encuentra la Transición en el Workflow.</value>
+  </data>
+  <data name="NoProjectsAlreadyCreated" xml:space="preserve">
+    <value>Aún no se ha creado ningún Evento.</value>
+  </data>
+</root>

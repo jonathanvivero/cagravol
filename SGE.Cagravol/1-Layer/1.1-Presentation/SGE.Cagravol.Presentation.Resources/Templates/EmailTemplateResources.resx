@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CustomerSignUp" xml:space="preserve">
+    <value>&lt;h2&gt;¡Bienvenido!&lt;/h2&gt;
+&lt;p&gt;Acaba de darse de alta en el sistema de gestión de Envíos de Artes Finales con el email {0}&lt;p&gt;
+&lt;p&gt;Para acceder al sistema, vaya a la p&amp;aacute;gina de &lt;a href="{1}"&gt;Entrada al Sistema&lt;/a&gt;&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Gracias por utilizar nuestros servicios.&lt;/p&gt;</value>
+  </data>
+  <data name="LegalDisclaimer_Format" xml:space="preserve">
+    <value>&lt;small&gt;
+&lt;strong&gt;ADVERTENCIA LEGAL&lt;/strong&gt;
+&lt;br/&gt;
+Le informamos, como destinatario de este mensaje, que el correo electrónico y las comunicaciones por medio de Internet no permiten asegurar ni garantizar la confidencialidad de los mensajes transmitidos, así como tampoco su integridad o su correcta recepción, por lo que el emisor no asume responsabilidad alguna por tales circunstancias. Si no consintiese en la utilización del correo electrónico o de las comunicaciones vía Internet le rogamos nos lo comunique y ponga en nuestro conocimiento de manera inmediata.
+Este mensaje va dirigido, de manera exclusiva, a su destinatario ({0})y contiene información confidencial y sujeta al secreto profesional, cuya divulgación no está permitida por la ley. En caso de haber recibido este mensaje por error, le rogamos que, de forma inmediata, nos lo comunique mediante correo electrónico remitido a nuestra atención y proceda a su eliminación, así como a la de cualquier documento adjunto al mismo. Asimismo, le comunicamos que la distribución, copia o utilización de este mensaje, o de cualquier documento adjunto al mismo, cualquiera que fuera su finalidad, están prohibidas por la ley.
+&lt;/small&gt;</value>
+  </data>
+  <data name="WFFileAddedSubject" xml:space="preserve">
+    <value>[GRAFIDEC] Archivo Añadido al Sistema</value>
+  </data>
+  <data name="WFFileStateChangedTo_Format" xml:space="preserve">
+    <value>&lt;h2&gt;Cambio en Estado de Archivo: {0} ({1})&lt;/h2&gt;
+&lt;p&gt;El Usuario {1} acaba de modificar el estado del archivo la denominación {0} (Nombre Original: {1}) al estado &lt;strong&gt;{6}&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Puede ver los detalles sobre el estado de este archivo &lt;a href="{3}" target="_blank"&gt;aqu&amp;iacute;&lt;/a&gt;.&lt;p&gt;
+&lt;p&gt;NOTA: Recuerde que para ver los detalles o descargar el archivo, debe estar logueado en el sistema con su usuario (email) y contrase&amp;ntilde;a correspondientes.&lt;p&gt;
+&lt;p&gt;Para acceder al sistema, vaya a la p&amp;aacute;gina de &lt;a href="{5}"&gt;Entrada al Sistema&lt;/a&gt;&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Gracias por utilizar nuestros servicios.&lt;/p&gt;
+&lt;br/&gt;</value>
+  </data>
+  <data name="WFFileStateChangeSubject" xml:space="preserve">
+    <value>[GRAFIDEC] Cambio en Estado Archivo</value>
+  </data>
+  <data name="WFNewFileInPlatform_Format" xml:space="preserve">
+    <value>&lt;h2&gt;Nuevo Archivo en el Sistema: {0} ({1})&lt;/h2&gt;
+&lt;p&gt;El Usuario {2} acaba de subir el archivo con la denominación {0} (Nombre Original: {1})&lt;/p&gt;
+&lt;p&gt;Puede ver los detalles sobre el estado de este archivo &lt;a href="{3}" target="_blank"&gt;aqu&amp;iacute;&lt;/a&gt;, o puede descargar &lt;a href="{4}" target="_blank"&gt;desde aqu&amp;iacute;&lt;/a&gt;.&lt;p&gt;
+&lt;p&gt;NOTA: Recuerde que para ver los detalles o descargar el archivo, debe estar logueado en el sistema con su usuario (email) y contrase&amp;ntilde;a correspondientes.&lt;p&gt;
+&lt;p&gt;Para acceder al sistema, vaya a la p&amp;aacute;gina de &lt;a href="{5}"&gt;Entrada al Sistema&lt;/a&gt;&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Gracias por utilizar nuestros servicios.&lt;/p&gt;
+&lt;br/&gt;</value>
+  </data>
+  <data name="CustomerAssigned" xml:space="preserve">
+    <value>&lt;h2&gt;¡Bienvenido!&lt;/h2&gt;
+&lt;p&gt;Acaba de ser incluido como usuario del sistema de gestión de Envíos de Artes Finales con el email {0}&lt;p&gt;
+&lt;p&gt;Para acceder al sistema, vaya a la p&amp;aacute;gina de &lt;a href="{1}"&gt;Entrada al Sistema&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Como nombre de usuario, utilice esta dirección de correo: &lt;strong&gt;{0}&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Su Contraseña (Seleccione texto para ver): &lt;strong style="background-color:#000000; color:#000000"&gt;{2}&lt;/strong&gt;&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Puede modificar su Contraseña desde su perfil como usuario, una vez logueado en el sistema.&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Gracias por utilizar nuestros servicios.&lt;/p&gt;</value>
+  </data>
+  <data name="CustomerReserved" xml:space="preserve">
+    <value>&lt;h2&gt;¡Bienvenido!&lt;/h2&gt;
+&lt;p&gt;Un espacio como usuario para usted acaba de ser reservado en el sistema de gestión de Envíos de Artes Finales con el email {0}&lt;p&gt;
+&lt;p&gt;Para acceder al sistema, vaya a la p&amp;aacute;gina de &lt;a href="{1}"&gt;Entrada al Sistema&lt;/a&gt;, y establezca una contraseña para registrarse definitivamente (Obligatorio),&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Puede modificar su Contraseña posteriormente, desde su perfil como usuario, una vez registrado y logueado en el sistema.&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Gracias por utilizar nuestros servicios.&lt;/p&gt;</value>
+  </data>
+</root>

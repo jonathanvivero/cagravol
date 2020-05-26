@@ -1,0 +1,123 @@
+﻿<waiting-spinner></waiting-spinner>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>{{title}}</h2>
+        <div class="clearfix">&nbsp;</div>
+        <p class="lead">{{description}}</p>
+    </div>
+</div>
+<info-bar></info-bar>
+<!--<div class="row" ng-show="showInfoBar()">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="showError()">
+        <div data-ng-show="showError()" class="alert alert-danger alert-dismissable" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="{{resx.common.close}}" ng-click="closeError()"><span aria-hidden="true">&times;</span></button>
+            <div ng-bind-html="getErrorMessage()"></div>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="showMessage()">
+        <div data-ng-show="showMessage()" class="alert alert-success alert-dismissable" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="{{resx.common.close}}" ng-click="closeMessage()"><span aria-hidden="true">&times;</span></button>
+            <div ng-bind-html="getGeneralMessage()"></div>
+        </div>
+    </div>
+</div>-->
+
+<div class="row">
+    <form>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="form-group">
+                <label for="item.name">{{resx.field.name}}</label>
+                <input type="text" class="form-control" ng-model="item.name" placeholder="{{resx.field.name}}">
+            </div>
+            <div class="form-group">
+                <label for="item.name">{{resx.field.description}}</label>
+                <input type="text" class="form-control" ng-model="item.description" placeholder="{{resx.field.description}}">
+            </div>
+            <div class="form-group">
+                <label for="item.code">{{resx.field.code}}</label>
+                <input type="text" class="form-control project-code" ng-model="item.code" placeholder="{{resx.field.code}}">
+            </div>
+            <div class="form-group">
+                <label for="item.code">{{resx.field.totalStands}}</label>
+                <input type="text" class="form-control" ng-model="item.totalStands" placeholder="{{resx.field.totalStands}}">
+            </div>
+            <div class="form-group">
+                <label for="item.notes">{{resx.field.notes}}</label>
+                <textarea class="form-control" rows="3" ng-model="item.notes"></textarea>
+                <!--<input type="text" class="form-control" ng-model="item.notes" placeholder="{{resx.field.notes}}">-->
+            </div>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">           
+            <div class="form-group">
+                <label for="item.startDate">{{resx.field.startDate}}</label>
+                <p class="input-group">
+                    <input type="text" ng-click="openStartDate()" class="form-control" uib-datepicker-popup="{{dtFormat}}" placeholder="{{resx.field.startDate}}" ng-model="item.startDate" is-open="popupStartDate.opened" datepicker-options="dateOptions" ng-required="true" alt-input-formats="{{altInputFormats}}" close-text="{{closeText}}" clear-text="{{clearText}}" current-text="{{currentText}}" />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="openStartDate()"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label for="item.finishDate">{{resx.field.finishDate}}</label>
+                <p class="input-group">
+                    <input type="text" ng-click="openFinishDate()" class="form-control" uib-datepicker-popup="{{dtFormat}}" placeholder="{{resx.field.finishDate}}" ng-model="item.finishDate" is-open="popupFinishDate.opened" datepicker-options="dateOptions" ng-required="true" alt-input-formats="{{altInputFormats}}" close-text="{{closeText}}" clear-text="{{clearText}}" current-text="{{currentText}}" />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="openFinishDate()"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label for="item.limitForSendingDate">{{resx.field.limitForSendingDate}}</label>
+                <p class="input-group">
+                    <input type="text" ng-click="openLimitForSendingDate()" class="form-control" uib-datepicker-popup="{{dtFormat}}" placeholder="{{resx.field.limitForSendingDate}}" ng-model="item.limitForSendingDate" is-open="popupLimitForSendingDate.opened" datepicker-options="dateOptions" ng-required="true" alt-input-formats="{{altInputFormats}}" close-text="{{closeText}}" clear-text="{{clearText}}" current-text="{{currentText}}" />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="openLimitForSendingDate()"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>           
+
+            <div class="form-group">
+                <label for="item.extraChargeForSendingDate">{{resx.field.extraChargeForSendingDate}}</label>
+                <p class="input-group">
+                    <input type="text" ng-click="openExtraChargeForSendingDate()" class="form-control" uib-datepicker-popup="{{dtFormat}}" placeholder="{{resx.field.extraChargeForSendingDate}}" ng-model="item.extraChargeForSendingDate" is-open="popupExtraChargeForSendingDate.opened" datepicker-options="dateOptions" ng-required="true" alt-input-formats="{{altInputFormats}}" close-text="{{closeText}}" clear-text="{{clearText}}" current-text="{{currentText}}" />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="openExtraChargeForSendingDate()"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </p>
+            </div>
+
+            <div class="form-group" ng-class="{'has-error': item.extraChargePercentage.$error.float}">
+                <label for="item.extraChargePercentage">{{resx.field.extraChargePercentage}}</label>
+
+                <input type="text" class=" has-error form-control" ng-model="item.extraChargePercentage" placeholder="{{resx.field.extraChargePercentage}}" smart-float>
+
+                <span class="help-block" ng-show="item.extraChargePercentage.$error.float">
+                    {{resx.common.decimalFormatPlease}}
+                </span>
+
+            </div>
+
+        </div>
+    </form>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <a class="btn btn-default" href="#/project"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;{{resx.backToList}}</a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <button class="btn btn-default pull-right" ng-class="{'disabled': !preValidate()}" ng-click="doSave()"><i class="fa fa-save"></i>&nbsp;&nbsp;{{saveButtonLabel}}&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></button>
+    </div>
+</div>
+
+<div class="row" ng-show="showNotExistMessage()">
+    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6">
+        <div class="alert alert-info alert-dismissible" role="alert">
+            <div class="text-center"><strong>{{resx.itemDoesNotExist}}</strong></div>
+        </div>
+    </div>
+
+</div>

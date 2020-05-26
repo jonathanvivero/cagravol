@@ -1,0 +1,112 @@
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>{{title}}</h2>
+        <div class="clearfix">&nbsp;</div>
+        <p class="lead">{{description}}</p>
+    </div>
+</div>
+<info-bar></info-bar>
+<hr />
+<div class="row" ng-show="userHaveRightsToMoveWF">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <a ng-show="cuzHasToResendFile" class="btn btn-default" href="#/myspace/resend/{{id}}"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;{{resx.resendFile}}</a>
+        <button ng-show="wfIsAbleToMoveBack" class="btn btn-danger" ng-click="moveWFBack()"><i class="fa fa-arrow-circle-left"></i>&nbsp;&nbsp;{{wfMoveBackTitle}}</button>
+        &nbsp;
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-show="wfIsAbleToMoveAhead === true || wfIsAbleToMoveBack === true">
+        <div class="form-group">
+            <label for="newComment">{{resx.field.commentForStateChange}}</label>
+            <textarea class="form-control" rows="3" ng-model="commentForWFStateChange"></textarea>            
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 hidden-sm hidden-xs" ng-show="wfIsAbleToMoveAhead === false && wfIsAbleToMoveBack === false">
+        &nbsp;
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <button ng-show="wfIsAbleToMoveAhead" class="btn btn-primary" ng-click="moveWFAhead()">{{wfMoveAheadTitle}}&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.name">{{resx.myspace.field.name}}</label>
+            <label class="form-control"><a href="{{item.file.url}}" target="_blank">{{item.file.name}}</a></label>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.fileTypeId">{{resx.myspace.field.fileType}}</label>
+            <label class="form-control">{{item.file.fileType.name}}</label>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.name">{{resx.myspace.field.size}}</label>
+            <label class="form-control">{{item.file.size | bytes}}</label>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.name">{{resx.myspace.field.firstDeliveryDate}}</label>
+            <label class="form-control">{{item.file.firstDeliveryDate | date : resx.common.dateTimeFormat}}</label>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.fileTypeId">{{resx.myspace.field.fileName}}</label>
+            <label class="form-control"><a href="{{item.file.url}}" target="_blank">{{item.file.fileName}}</a></label>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row" ng-show="item.states.length > 0">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4>Historia <small>(De más reciente a más antiguo)</small></h4>
+    </div>
+    <div class="clearfix" ng-repeat="sta in item.states">
+
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 wf-node-bg">
+            &nbsp;
+        </div>
+        <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <span class="label label-primary">{{sta.state.name}}</span>&nbsp;&nbsp;<strong>{{sta.user.userName}}</strong> {{resx.common.atDateTime}}: {{sta.ts | date : resx.common.dateTimeFormat}}
+                </div>
+            </div>
+            <div class="row">
+                <blockquote ng-repeat="note in sta.notes">
+                    <span class="label label-default">{{note.user.userName}}</span>{{resx.common.atDateTime}}: {{note.ts | date : resx.common.dateTimeFormat}}
+                    <p> {{note.comment}} </p>
+                </blockquote>
+                <blockquote ng-show="commentIsOpen(sta)">
+                    <div class="form-group">
+                        <label for="newComment">{{resx.field.newComment}}</label>
+                        <textarea class="form-control" rows="3" ng-model="newComment[$index]"></textarea>
+                        <!--<input type="text" class="form-control" ng-model="item.notes" placeholder="{{resx.field.notes}}">-->
+                    </div>
+                    <div class="fo
+                    <div class=" form-group">
+                        <button class="btn btn-success btn-xs " ng-click="saveComment($index)"><i class="fa fa-check-circle"></i>&nbsp;&nbsp;{{resx.saveNewCommentToState}}</button>
+                        <button class="btn btn-danger btn-xs pull-right" ng-click="cancelComment($index)"><i class="fa fa-remove"></i>&nbsp;&nbsp;{{resx.cancelNewCommentToState}}</button>
+                    </div>
+                </blockquote>
+
+                <button class="btn btn-primary btn-xs pull-left" ng-class="{disabled: addCommentToStateId !== 0}" ng-click="addCommentTo(sta)"><i class="fa fa-comment-o"></i>&nbsp;&nbsp;{{resx.addCommentToState}}</button>
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <a class="btn btn-default" href="{{backToUrl}}"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;{{resx.myspace.backToList}}</a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        &nbsp;
+    </div>
+</div>

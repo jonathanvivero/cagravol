@@ -1,0 +1,69 @@
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>{{title}}</h2>
+        <div class="clearfix">&nbsp;</div>
+        <p class="lead">{{description}}</p>
+    </div>
+</div>
+<info-bar></info-bar>
+<div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.name">{{resx.field.name}}</label>
+            <input type="text" class="form-control" ng-model="item.name" placeholder="{{resx.field.name}}">
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.fileTypeId">{{resx.field.fileType}}</label>
+            <select ng-model="selectedFileType" class=" form-control" ng-change="typeChanged()" ng-options="type.name for type in types track by type.id"></select>
+        </div>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.notes">{{resx.field.fileNotes}}</label>
+            <textarea class="form-control" rows="3" ng-model="item.fileNotes"></textarea>            
+        </div>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="item.url">{{resx.field.file}}&nbsp;&nbsp;<i class="fa fa-info-circle"></i></label>            
+            <label class="form-control">
+                <a href="{{item.url}}" target="_blank">{{item.fileName}}</a>
+            </label>
+        </div>                    
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+        <div class="form-group">
+            <label for="item.url">{{resx.field.version}}</label>
+            <label class="form-control">
+                    {{item.version}}
+                    
+            </label>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        <div class="form-group">
+            <label for="item.url">{{resx.field.size}}</label>
+            <label class="form-control">
+                {{item.size | bytes}}
+            </label>
+        </div>
+    </div>
+
+</div>
+
+
+<hr />
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <a class="btn btn-default" ng-href="{{backUrl}}"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;{{resx.backToList}}</a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <button class="btn btn-default pull-right" ng-disabled="!preValidate()" ng-click="doUpdate()"><i class="fa fa-save"></i>&nbsp;&nbsp;{{resx.doSaveFileData}}&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></button>
+    </div>
+</div>
+
+

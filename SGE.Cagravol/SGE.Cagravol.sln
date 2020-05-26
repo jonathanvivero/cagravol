@@ -1,0 +1,303 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1-Presentation", "1.1-Presentation", "{8575ABCA-D12A-4DF2-95D2-A97C44D85F5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2-Application", "1.2-Application", "{7FA859B3-033A-4253-91B0-BBC2E15BECB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.7-Library", "1.7-Library", "{7CD1EE04-17FE-40CA-B175-CB9FBF7F130D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3-Domain", "1.3-Domain", "{7981929A-B0B9-4564-B51F-3CA5C927C14A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4-Infrastructure", "1.4-Infrastructure", "{C855A93A-97F5-4C94-8151-CF72833F7637}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5-WebAPI", "1.5-WebAPI", "{8B940224-34D3-4135-9704-5CCC122E249A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.6-Console", "1.6-Console", "{133D4F67-1F0C-46D6-A1B8-0F15D0EEB71F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Test", "2-Test", "{02AE2684-2276-49A3-8F07-18FA4453A16B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.WebAPI", "1-Layer\1.5-WebAPI\SGE.Cagravol.WebAPI\SGE.Cagravol.WebAPI.csproj", "{691B9AFB-2C76-49A9-87E9-C8015C313C21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1-Test", "2.1-Test", "{EE65C709-9545-4915-877F-C4DD6C7972C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.WebAPI.Tests", "2-Test\2.1-Test\SGE.Cagravol.WebAPI.Tests\SGE.Cagravol.WebAPI.Tests.csproj", "{20B86DDD-5864-4F8F-9235-9B62942E1D3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Domain.Entities.Common", "1-Layer\1.3-Domain\SGE.Cagravol.Domain.Entities.Common\SGE.Cagravol.Domain.Entities.Common.csproj", "{8CBCC765-09DA-418D-8F68-281A9DCCA2C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Domain.Entities", "1-Layer\1.3-Domain\SGE.Cagravol.Domain.Entities\SGE.Cagravol.Domain.Entities.csproj", "{953D6B6F-C2EA-4C35-85CF-8755F4757B61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{86FEDF59-AF51-46D4-98CA-015EFDB2A4E9}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Infrastructure.Data", "1-Layer\1.4-Infrastructure\SGE.Cagravol.Infrastructure.Data\SGE.Cagravol.Infrastructure.Data.csproj", "{2932E6D7-6590-4EDC-AEAC-3A3228197163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Presentation.Resources", "1-Layer\1.1-Presentation\SGE.Cagravol.Presentation.Resources\SGE.Cagravol.Presentation.Resources.csproj", "{74094E9E-CAFB-4042-8060-DB3D31E93B30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Domain.Repositories", "1-Layer\1.3-Domain\SGE.Cagravol.Domain.Repositories\SGE.Cagravol.Domain.Repositories.csproj", "{C59FADAF-14CC-46AD-A710-8F4E3DC0730A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Domain.POCO", "1-Layer\1.3-Domain\SGE.Cagravol.Domain.POCO\SGE.Cagravol.Domain.POCO.csproj", "{611C6085-073F-43CB-89BB-A198730E1281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Presentation.ViewModel", "1-Layer\1.1-Presentation\SGE.Cagravol.Presentation.ViewModel\SGE.Cagravol.Presentation.ViewModel.csproj", "{EE464378-FF71-4D84-89B8-E1E463FF2DA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Application.Core", "1-Layer\1.2-Application\SGE.Cagravol.Application.Core\SGE.Cagravol.Application.Core.csproj", "{41BD97DA-75FA-49BC-942D-D36E7D0FA391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Application.Services", "1-Layer\1.2-Application\SGE.Cagravol.Application.Services\SGE.Cagravol.Application.Services.csproj", "{207BBF59-7153-40AE-BE44-F2DD00B619FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Infrastructure.Utils", "1-Layer\1.4-Infrastructure\SGE.Cagravol.Infrastructure.Utils\SGE.Cagravol.Infrastructure.Utils.csproj", "{338D90FE-CDAA-4F8A-BB4C-E9BF3ED9A6BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Domain.JSON", "1-Layer\1.3-Domain\SGE.Cagravol.Domain.JSON\SGE.Cagravol.Domain.JSON.csproj", "{AEC5E36A-D148-40B1-A551-7BB8293E4CA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Domain.Entities.Extensions", "1-Layer\1.3-Domain\SGE.Cagravol.Domain.Entities.Extensions\SGE.Cagravol.Domain.Entities.Extensions.csproj", "{7E15641B-1081-408E-A370-44152EE98202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Presentation.Web", "1-Layer\1.1-Presentation\SGE.Cagravol.Presentation.Web\SGE.Cagravol.Presentation.Web.csproj", "{9B8C5034-3544-4E2B-9C58-5BEF7F0282C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGEExtensions", "..\SGEExtensions\SGEExtensions\SGEExtensions.csproj", "{E726E81F-519D-485C-A659-EAD5AE64C249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Infrastructure.Data.Repositories", "1-Layer\1.4-Infrastructure\SGE.Cagravol.Infrastructure.Data.Repositories\SGE.Cagravol.Infrastructure.Data.Repositories.csproj", "{C7C141A5-0452-411A-A7B2-040D744A351F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Application.Core.Extensions", "1-Layer\1.2-Application\SGE.Cagravol.Application.Core.Extensions\SGE.Cagravol.Application.Core.Extensions.csproj", "{305EC376-F2C8-4F3E-90D3-336D34DD6806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Application.Core.DataAnnotations", "1-Layer\1.2-Application\SGE.Cagravol.Application.Core.DataAnnotations\SGE.Cagravol.Application.Core.DataAnnotations.csproj", "{6B207FD8-29AC-43DC-99CF-50B639EF289C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Workflow", "1-Layer\1.7-Library\SGE.Workflow\SGE.Workflow.csproj", "{5A5DD9B9-FE6E-4245-B306-73D1AC5B23C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Workflow.Pods", "SGE.Workflow.Pods\SGE.Workflow.Pods.csproj", "{068B3A94-5D86-4925-841B-71D4261855CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Application.Core.Enums", "1-Layer\1.2-Application\SGE.Cagravol.Application.Core.Enums\SGE.Cagravol.Application.Core.Enums.csproj", "{33339B6B-293D-4BD0-93EF-87F27A9A672A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGE.Cagravol.Application.ServiceModel", "1-Layer\1.2-Application\SGE.Cagravol.Application.ServiceModel\SGE.Cagravol.Application.ServiceModel.csproj", "{9BEBCFF8-402C-40A4-A533-6A505CA887C5}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 24
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sgesoftteam.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\SGEExtensions\\SGEExtensions\\SGEExtensions.csproj
+		SccProjectTopLevelParentUniqueName1 = SGE.Cagravol.sln
+		SccProjectName1 = ../SGEExtensions/SGEExtensions
+		SccLocalPath1 = ..\\SGEExtensions\\SGEExtensions
+		SccProjectUniqueName2 = 1-Layer\\1.1-Presentation\\SGE.Cagravol.Presentation.Resources\\SGE.Cagravol.Presentation.Resources.csproj
+		SccProjectTopLevelParentUniqueName2 = SGE.Cagravol.sln
+		SccProjectName2 = 1-Layer/1.1-Presentation/SGE.Cagravol.Presentation.Resources
+		SccLocalPath2 = 1-Layer\\1.1-Presentation\\SGE.Cagravol.Presentation.Resources
+		SccProjectUniqueName3 = 1-Layer\\1.1-Presentation\\SGE.Cagravol.Presentation.ViewModel\\SGE.Cagravol.Presentation.ViewModel.csproj
+		SccProjectTopLevelParentUniqueName3 = SGE.Cagravol.sln
+		SccProjectName3 = 1-Layer/1.1-Presentation/SGE.Cagravol.Presentation.ViewModel
+		SccLocalPath3 = 1-Layer\\1.1-Presentation\\SGE.Cagravol.Presentation.ViewModel
+		SccProjectUniqueName4 = 1-Layer\\1.1-Presentation\\SGE.Cagravol.Presentation.Web\\SGE.Cagravol.Presentation.Web.csproj
+		SccProjectTopLevelParentUniqueName4 = SGE.Cagravol.sln
+		SccProjectName4 = 1-Layer/1.1-Presentation/SGE.Cagravol.Presentation.Web
+		SccLocalPath4 = 1-Layer\\1.1-Presentation\\SGE.Cagravol.Presentation.Web
+		SccProjectUniqueName5 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Core\\SGE.Cagravol.Application.Core.csproj
+		SccProjectTopLevelParentUniqueName5 = SGE.Cagravol.sln
+		SccProjectName5 = 1-Layer/1.2-Application/SGE.Cagravol.Application.Core
+		SccLocalPath5 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Core
+		SccProjectUniqueName6 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Services\\SGE.Cagravol.Application.Services.csproj
+		SccProjectTopLevelParentUniqueName6 = SGE.Cagravol.sln
+		SccProjectName6 = 1-Layer/1.2-Application/SGE.Cagravol.Application.Services
+		SccLocalPath6 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Services
+		SccProjectUniqueName7 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.Entities.Common\\SGE.Cagravol.Domain.Entities.Common.csproj
+		SccProjectTopLevelParentUniqueName7 = SGE.Cagravol.sln
+		SccProjectName7 = 1-Layer/1.3-Domain/SGE.Cagravol.Domain.Entities.Common
+		SccLocalPath7 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.Entities.Common
+		SccProjectUniqueName8 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.Entities.Extensions\\SGE.Cagravol.Domain.Entities.Extensions.csproj
+		SccProjectTopLevelParentUniqueName8 = SGE.Cagravol.sln
+		SccProjectName8 = 1-Layer/1.3-Domain/SGE.Cagravol.Domain.Entities.Extensions
+		SccLocalPath8 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.Entities.Extensions
+		SccProjectUniqueName9 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.Entities\\SGE.Cagravol.Domain.Entities.csproj
+		SccProjectTopLevelParentUniqueName9 = SGE.Cagravol.sln
+		SccProjectName9 = 1-Layer/1.3-Domain/SGE.Cagravol.Domain.Entities
+		SccLocalPath9 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.Entities
+		SccProjectUniqueName10 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.JSON\\SGE.Cagravol.Domain.JSON.csproj
+		SccProjectTopLevelParentUniqueName10 = SGE.Cagravol.sln
+		SccProjectName10 = 1-Layer/1.3-Domain/SGE.Cagravol.Domain.JSON
+		SccLocalPath10 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.JSON
+		SccProjectUniqueName11 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.POCO\\SGE.Cagravol.Domain.POCO.csproj
+		SccProjectTopLevelParentUniqueName11 = SGE.Cagravol.sln
+		SccProjectName11 = 1-Layer/1.3-Domain/SGE.Cagravol.Domain.POCO
+		SccLocalPath11 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.POCO
+		SccProjectUniqueName12 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.Repositories\\SGE.Cagravol.Domain.Repositories.csproj
+		SccProjectTopLevelParentUniqueName12 = SGE.Cagravol.sln
+		SccProjectName12 = 1-Layer/1.3-Domain/SGE.Cagravol.Domain.Repositories
+		SccLocalPath12 = 1-Layer\\1.3-Domain\\SGE.Cagravol.Domain.Repositories
+		SccProjectUniqueName13 = 1-Layer\\1.4-Infrastructure\\SGE.Cagravol.Infrastructure.Data\\SGE.Cagravol.Infrastructure.Data.csproj
+		SccProjectTopLevelParentUniqueName13 = SGE.Cagravol.sln
+		SccProjectName13 = 1-Layer/1.4-Infrastructure/SGE.Cagravol.Infrastructure.Data
+		SccLocalPath13 = 1-Layer\\1.4-Infrastructure\\SGE.Cagravol.Infrastructure.Data
+		SccProjectUniqueName14 = 1-Layer\\1.4-Infrastructure\\SGE.Cagravol.Infrastructure.Utils\\SGE.Cagravol.Infrastructure.Utils.csproj
+		SccProjectTopLevelParentUniqueName14 = SGE.Cagravol.sln
+		SccProjectName14 = 1-Layer/1.4-Infrastructure/SGE.Cagravol.Infrastructure.Utils
+		SccLocalPath14 = 1-Layer\\1.4-Infrastructure\\SGE.Cagravol.Infrastructure.Utils
+		SccProjectUniqueName15 = 1-Layer\\1.5-WebAPI\\SGE.Cagravol.WebAPI\\SGE.Cagravol.WebAPI.csproj
+		SccProjectTopLevelParentUniqueName15 = SGE.Cagravol.sln
+		SccProjectName15 = 1-Layer/1.5-WebAPI/SGE.Cagravol.WebAPI
+		SccLocalPath15 = 1-Layer\\1.5-WebAPI\\SGE.Cagravol.WebAPI
+		SccProjectUniqueName16 = 2-Test\\2.1-Test\\SGE.Cagravol.WebAPI.Tests\\SGE.Cagravol.WebAPI.Tests.csproj
+		SccProjectTopLevelParentUniqueName16 = SGE.Cagravol.sln
+		SccProjectName16 = 2-Test/2.1-Test/SGE.Cagravol.WebAPI.Tests
+		SccLocalPath16 = 2-Test\\2.1-Test\\SGE.Cagravol.WebAPI.Tests
+		SccProjectUniqueName17 = 1-Layer\\1.4-Infrastructure\\SGE.Cagravol.Infrastructure.Data.Repositories\\SGE.Cagravol.Infrastructure.Data.Repositories.csproj
+		SccProjectTopLevelParentUniqueName17 = SGE.Cagravol.sln
+		SccProjectName17 = 1-Layer/1.4-Infrastructure/SGE.Cagravol.Infrastructure.Data.Repositories
+		SccLocalPath17 = 1-Layer\\1.4-Infrastructure\\SGE.Cagravol.Infrastructure.Data.Repositories
+		SccProjectUniqueName18 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Core.Extensions\\SGE.Cagravol.Application.Core.Extensions.csproj
+		SccProjectTopLevelParentUniqueName18 = SGE.Cagravol.sln
+		SccProjectName18 = 1-Layer/1.2-Application/SGE.Cagravol.Application.Core.Extensions
+		SccLocalPath18 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Core.Extensions
+		SccProjectUniqueName19 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Core.DataAnnotations\\SGE.Cagravol.Application.Core.DataAnnotations.csproj
+		SccProjectTopLevelParentUniqueName19 = SGE.Cagravol.sln
+		SccProjectName19 = 1-Layer/1.2-Application/SGE.Cagravol.Application.Core.DataAnnotations
+		SccLocalPath19 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Core.DataAnnotations
+		SccProjectUniqueName20 = 1-Layer\\1.7-Library\\SGE.Workflow\\SGE.Workflow.csproj
+		SccProjectTopLevelParentUniqueName20 = SGE.Cagravol.sln
+		SccProjectName20 = 1-Layer/1.7-Library/SGE.Workflow
+		SccLocalPath20 = 1-Layer\\1.7-Library\\SGE.Workflow
+		SccProjectUniqueName21 = SGE.Workflow.Pods\\SGE.Workflow.Pods.csproj
+		SccProjectTopLevelParentUniqueName21 = SGE.Cagravol.sln
+		SccProjectName21 = SGE.Workflow.Pods
+		SccLocalPath21 = SGE.Workflow.Pods
+		SccProjectUniqueName22 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Core.Enums\\SGE.Cagravol.Application.Core.Enums.csproj
+		SccProjectTopLevelParentUniqueName22 = SGE.Cagravol.sln
+		SccProjectName22 = 1-Layer/1.2-Application/SGE.Cagravol.Application.Core.Enums
+		SccLocalPath22 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.Core.Enums
+		SccProjectUniqueName23 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.ServiceModel\\SGE.Cagravol.Application.ServiceModel.csproj
+		SccProjectTopLevelParentUniqueName23 = SGE.Cagravol.sln
+		SccProjectName23 = 1-Layer/1.2-Application/SGE.Cagravol.Application.ServiceModel
+		SccLocalPath23 = 1-Layer\\1.2-Application\\SGE.Cagravol.Application.ServiceModel
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{691B9AFB-2C76-49A9-87E9-C8015C313C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691B9AFB-2C76-49A9-87E9-C8015C313C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691B9AFB-2C76-49A9-87E9-C8015C313C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691B9AFB-2C76-49A9-87E9-C8015C313C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B86DDD-5864-4F8F-9235-9B62942E1D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B86DDD-5864-4F8F-9235-9B62942E1D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B86DDD-5864-4F8F-9235-9B62942E1D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B86DDD-5864-4F8F-9235-9B62942E1D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CBCC765-09DA-418D-8F68-281A9DCCA2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CBCC765-09DA-418D-8F68-281A9DCCA2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CBCC765-09DA-418D-8F68-281A9DCCA2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CBCC765-09DA-418D-8F68-281A9DCCA2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953D6B6F-C2EA-4C35-85CF-8755F4757B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953D6B6F-C2EA-4C35-85CF-8755F4757B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953D6B6F-C2EA-4C35-85CF-8755F4757B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953D6B6F-C2EA-4C35-85CF-8755F4757B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2932E6D7-6590-4EDC-AEAC-3A3228197163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2932E6D7-6590-4EDC-AEAC-3A3228197163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2932E6D7-6590-4EDC-AEAC-3A3228197163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2932E6D7-6590-4EDC-AEAC-3A3228197163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74094E9E-CAFB-4042-8060-DB3D31E93B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74094E9E-CAFB-4042-8060-DB3D31E93B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74094E9E-CAFB-4042-8060-DB3D31E93B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74094E9E-CAFB-4042-8060-DB3D31E93B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59FADAF-14CC-46AD-A710-8F4E3DC0730A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59FADAF-14CC-46AD-A710-8F4E3DC0730A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59FADAF-14CC-46AD-A710-8F4E3DC0730A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59FADAF-14CC-46AD-A710-8F4E3DC0730A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611C6085-073F-43CB-89BB-A198730E1281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611C6085-073F-43CB-89BB-A198730E1281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611C6085-073F-43CB-89BB-A198730E1281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611C6085-073F-43CB-89BB-A198730E1281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE464378-FF71-4D84-89B8-E1E463FF2DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE464378-FF71-4D84-89B8-E1E463FF2DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE464378-FF71-4D84-89B8-E1E463FF2DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE464378-FF71-4D84-89B8-E1E463FF2DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BD97DA-75FA-49BC-942D-D36E7D0FA391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BD97DA-75FA-49BC-942D-D36E7D0FA391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BD97DA-75FA-49BC-942D-D36E7D0FA391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BD97DA-75FA-49BC-942D-D36E7D0FA391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207BBF59-7153-40AE-BE44-F2DD00B619FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207BBF59-7153-40AE-BE44-F2DD00B619FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207BBF59-7153-40AE-BE44-F2DD00B619FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207BBF59-7153-40AE-BE44-F2DD00B619FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{338D90FE-CDAA-4F8A-BB4C-E9BF3ED9A6BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{338D90FE-CDAA-4F8A-BB4C-E9BF3ED9A6BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{338D90FE-CDAA-4F8A-BB4C-E9BF3ED9A6BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{338D90FE-CDAA-4F8A-BB4C-E9BF3ED9A6BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC5E36A-D148-40B1-A551-7BB8293E4CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC5E36A-D148-40B1-A551-7BB8293E4CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC5E36A-D148-40B1-A551-7BB8293E4CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC5E36A-D148-40B1-A551-7BB8293E4CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E15641B-1081-408E-A370-44152EE98202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E15641B-1081-408E-A370-44152EE98202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E15641B-1081-408E-A370-44152EE98202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E15641B-1081-408E-A370-44152EE98202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8C5034-3544-4E2B-9C58-5BEF7F0282C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8C5034-3544-4E2B-9C58-5BEF7F0282C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8C5034-3544-4E2B-9C58-5BEF7F0282C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8C5034-3544-4E2B-9C58-5BEF7F0282C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E726E81F-519D-485C-A659-EAD5AE64C249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E726E81F-519D-485C-A659-EAD5AE64C249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E726E81F-519D-485C-A659-EAD5AE64C249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E726E81F-519D-485C-A659-EAD5AE64C249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C141A5-0452-411A-A7B2-040D744A351F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C141A5-0452-411A-A7B2-040D744A351F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C141A5-0452-411A-A7B2-040D744A351F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C141A5-0452-411A-A7B2-040D744A351F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305EC376-F2C8-4F3E-90D3-336D34DD6806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305EC376-F2C8-4F3E-90D3-336D34DD6806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305EC376-F2C8-4F3E-90D3-336D34DD6806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305EC376-F2C8-4F3E-90D3-336D34DD6806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B207FD8-29AC-43DC-99CF-50B639EF289C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B207FD8-29AC-43DC-99CF-50B639EF289C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B207FD8-29AC-43DC-99CF-50B639EF289C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B207FD8-29AC-43DC-99CF-50B639EF289C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5DD9B9-FE6E-4245-B306-73D1AC5B23C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5DD9B9-FE6E-4245-B306-73D1AC5B23C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5DD9B9-FE6E-4245-B306-73D1AC5B23C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5DD9B9-FE6E-4245-B306-73D1AC5B23C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068B3A94-5D86-4925-841B-71D4261855CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068B3A94-5D86-4925-841B-71D4261855CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068B3A94-5D86-4925-841B-71D4261855CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068B3A94-5D86-4925-841B-71D4261855CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33339B6B-293D-4BD0-93EF-87F27A9A672A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33339B6B-293D-4BD0-93EF-87F27A9A672A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33339B6B-293D-4BD0-93EF-87F27A9A672A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33339B6B-293D-4BD0-93EF-87F27A9A672A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEBCFF8-402C-40A4-A533-6A505CA887C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEBCFF8-402C-40A4-A533-6A505CA887C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEBCFF8-402C-40A4-A533-6A505CA887C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEBCFF8-402C-40A4-A533-6A505CA887C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{691B9AFB-2C76-49A9-87E9-C8015C313C21} = {8B940224-34D3-4135-9704-5CCC122E249A}
+		{EE65C709-9545-4915-877F-C4DD6C7972C7} = {02AE2684-2276-49A3-8F07-18FA4453A16B}
+		{20B86DDD-5864-4F8F-9235-9B62942E1D3B} = {EE65C709-9545-4915-877F-C4DD6C7972C7}
+		{8CBCC765-09DA-418D-8F68-281A9DCCA2C2} = {7981929A-B0B9-4564-B51F-3CA5C927C14A}
+		{953D6B6F-C2EA-4C35-85CF-8755F4757B61} = {7981929A-B0B9-4564-B51F-3CA5C927C14A}
+		{2932E6D7-6590-4EDC-AEAC-3A3228197163} = {C855A93A-97F5-4C94-8151-CF72833F7637}
+		{74094E9E-CAFB-4042-8060-DB3D31E93B30} = {8575ABCA-D12A-4DF2-95D2-A97C44D85F5C}
+		{C59FADAF-14CC-46AD-A710-8F4E3DC0730A} = {7981929A-B0B9-4564-B51F-3CA5C927C14A}
+		{611C6085-073F-43CB-89BB-A198730E1281} = {7981929A-B0B9-4564-B51F-3CA5C927C14A}
+		{EE464378-FF71-4D84-89B8-E1E463FF2DA4} = {8575ABCA-D12A-4DF2-95D2-A97C44D85F5C}
+		{41BD97DA-75FA-49BC-942D-D36E7D0FA391} = {7FA859B3-033A-4253-91B0-BBC2E15BECB7}
+		{207BBF59-7153-40AE-BE44-F2DD00B619FF} = {7FA859B3-033A-4253-91B0-BBC2E15BECB7}
+		{338D90FE-CDAA-4F8A-BB4C-E9BF3ED9A6BF} = {C855A93A-97F5-4C94-8151-CF72833F7637}
+		{AEC5E36A-D148-40B1-A551-7BB8293E4CA1} = {7981929A-B0B9-4564-B51F-3CA5C927C14A}
+		{7E15641B-1081-408E-A370-44152EE98202} = {7981929A-B0B9-4564-B51F-3CA5C927C14A}
+		{9B8C5034-3544-4E2B-9C58-5BEF7F0282C8} = {8575ABCA-D12A-4DF2-95D2-A97C44D85F5C}
+		{E726E81F-519D-485C-A659-EAD5AE64C249} = {7CD1EE04-17FE-40CA-B175-CB9FBF7F130D}
+		{C7C141A5-0452-411A-A7B2-040D744A351F} = {C855A93A-97F5-4C94-8151-CF72833F7637}
+		{305EC376-F2C8-4F3E-90D3-336D34DD6806} = {7FA859B3-033A-4253-91B0-BBC2E15BECB7}
+		{6B207FD8-29AC-43DC-99CF-50B639EF289C} = {7FA859B3-033A-4253-91B0-BBC2E15BECB7}
+		{5A5DD9B9-FE6E-4245-B306-73D1AC5B23C9} = {7CD1EE04-17FE-40CA-B175-CB9FBF7F130D}
+		{068B3A94-5D86-4925-841B-71D4261855CC} = {7CD1EE04-17FE-40CA-B175-CB9FBF7F130D}
+		{33339B6B-293D-4BD0-93EF-87F27A9A672A} = {7FA859B3-033A-4253-91B0-BBC2E15BECB7}
+		{9BEBCFF8-402C-40A4-A533-6A505CA887C5} = {7FA859B3-033A-4253-91B0-BBC2E15BECB7}
+	EndGlobalSection
+EndGlobal
