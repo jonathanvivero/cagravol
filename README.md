@@ -29,13 +29,13 @@ These are some features you will find in the project:
    - I have the permission from SGE Company (the company I made the project for) to use it in my personal portfolio for possible employers verification, as in this case.
    - I don't have any other permission or any other property over this code.
    - Currently, I don't have contact with SGE Company, so don't know if their customer is running the project, but can assure that was running for 2 years at least.
-   - Is code first, so if you change the database connection string in the project SGE.Cagravol.WebAPI -> Web.config between lines 12 and 13:
-     - It creates a database called CAGRAVOL-DEV in the local database aliased to (.) 
+   - Is code first, so if you change the database connection string in the project __SGE.Cagravol.WebAPI__ -> __Web.config__ between lines 12 and 13:
+     - It creates a database called _CAGRAVOL-DEV_ in the local database aliased to (.) 
      - It is using Windows Authentication
    - For launch the migration, in the Package Manager Console:
-     - Select default Project: 1.5-WebAPI\SGE.Cagravol.WebAPI
-     - Type "Update-database -verbose -ProjectName SGE.Cagravol.Infrastructure.Data"
-   - "CAGRAVOL" is a spanish pun/abbreviation of "CArga de (archivos de) GRAndes VOLúmenes", that means something like "large volume files manager".
+     - Select default Project: __1.5-WebAPI\SGE.Cagravol.WebAPI__
+     - Type _"Update-database -verbose -ProjectName SGE.Cagravol.Infrastructure.Data"_
+   - "CAGRAVOL" is a spanish pun/abbreviation of _"CArga de (archivos de) GRAndes VOLúmenes"_, that means something like _"large volume files manager"_.
 
 
 
